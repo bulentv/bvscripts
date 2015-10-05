@@ -1,12 +1,13 @@
 #!/bin/bash
 
 #
-# Creaets openvpn key files for the given user / email
+# Creates openvpn key files for the given user / email
 # Please see the content of the script to change (even)
 # some hardcoded values that does not fit your info
-# @author: Bulent Vural
 #
 # For usage info run the script with no args
+# @author: Bulent Vural - 05.10.2015
+# @version: v0.0.1
 #
 
 
