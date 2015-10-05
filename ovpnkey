@@ -6,9 +6,10 @@
 # some hardcoded values that does not fit your info
 #
 # For usage info run the script with no args
-# @author: Bulent Vural - 05.10.2015
-# @version: v0.0.1
 #
+
+AUTHOR="Bulent Vural - bulentv@gmail.com"
+VERSION="v0.0.1 - 05.10.2015"
 
 
 DEVICE="tun"
@@ -116,6 +117,7 @@ case "$1" in
     do_list
     ;;
   *)
+    echo "ovpnkey $VERSION -- $AUTHOR"
     echo "Usage: $0 --create (-c) | --revoke (-r) name [email]" >&2
     exit 3
     ;;
