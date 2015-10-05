@@ -1,0 +1,111 @@
+#!/bin/bash
+
+DEVICE="tun"
+PROTO="udp"
+HOST="example.com"
+PORT="1194"
+EXT="ovpn"
+EASY_RSA_DIR="/etc/openvpn/easy-rsa/2.0/"
+
+TEMPLATE="
+client
+dev $DEVICE
+proto $PROTO
+remote $HOST $PORT
+resolv-retry infinite
+nobind
+redirect-gateway
+persist-key
+persist-tun
+comp-lzo
+verb 3
+"
+
+#---- DO NOT TOUCH BELOW THIS LINE
+NAME=$2
+EMAIL=$3
+
+function do_create () {
+
+
+cwd=$(pwd)
+cd $EASY_RSA_DIR
+source ./vars > /dev/null
+
+expect <<- DONE
+set timeout -1
+spawn ./build-key $NAME
+
+expect "*?ountry" {send "TR\r"}
+expect "*?tate" {send "TR\r"}
+expect "*?ocality" {send "Istanbul\r"}
+expect "*?rganization Name" {send "bvnet\r"}
+expect "*?rganizational Unit" {send "remote\r"}
+expect "*?ommon Name" {send "\r"}
+expect "*?ame " {send "$NAME\r"}
+expect "*?mail" {send "$EMAIL\r"}
+expect "*? challenge" {send "\r"}
+expect "*?n optional company" {send "\r"}
+expect "*?certificate\?" {send "y\r"}
+expect "*?commit\?" {send "y\r"}
+expect eof
+DONE
+
+ca="$(cat keys/ca.crt | sed -n '/BEGIN CERTIFICATE/,/END CERTIFICATE/p')"
+crt="$(cat keys/${NAME}.crt | sed -n '/BEGIN CERTIFICATE/,/END CERTIFICATE/p')"
+key="$(cat keys/${NAME}.key | sed -n '/BEGIN PRIVATE KEY/,/END PRIVATE KEY/p')"
+rm -f keys/${NAME}.crt
+rm -f keys/${NAME}.csr
+rm -f keys/${NAME}.key
+
+cd $cwd
+out="$NAME.$EXT"
+echo "$TEMPLATE" > $out
+echo "<ca>" >> $out
+echo "$ca" >> $out
+echo "</ca>" >> $out
+echo "<cert>" >> $out
+echo "$crt" >> $out
+echo "</cert>" >> $out
+echo "<key>" >> $out
+echo "$key" >> $out
+echo "</key>" >> $out
+
+echo "$out created"
+}
+
+function do_revoke () {
+
+cwd=$(pwd)
+cd $EASY_RSA_DIR
+
+source ./vars
+
+./revoke-full $NAME
+
+cd $cwd
+}
+
+function do_list () {
+cwd=$(pwd)
+cd $EASY_RSA_DIR
+
+cat keys/index.txt
+cd $cwd
+}
+
+case "$1" in
+  --create|-c)
+    do_create
+    ;;
+  --revoke|-r)
+    do_revoke
+    ;;
+  --list|-l)
+    do_list
+    ;;
+  *)
+    echo "Usage: $0 --create (-c) | --revoke (-r) name [email]" >&2
+    exit 3
+    ;;
+esac
