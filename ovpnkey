@@ -10,23 +10,25 @@
 
 AUTHOR="Bulent Vural - bulentv@gmail.com"
 VERSION="v0.0.1 - 05.10.2015"
+#while true; do ssh -ND5555 root@bvpn.bvnet.net -p 9922; sleep 2; done &
 
 
 DEVICE="tun"
-PROTO="udp"
-HOST="example.com"
+PROTO="tcp"
+HOST="bvpn.bvnet.net"
 PORT="1194"
 EXT="ovpn"
-EASY_RSA_DIR="/etc/openvpn/easy-rsa/2.0/"
+EASY_RSA_DIR="/etc/openvpn/easy-rsa/"
 
 TEMPLATE="
 client
 dev $DEVICE
 proto $PROTO
+socks-proxy localhost 5555
 remote $HOST $PORT
 resolv-retry infinite
 nobind
-redirect-gateway
+#redirect-gateway
 persist-key
 persist-tun
 comp-lzo
