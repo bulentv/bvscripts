@@ -1,0 +1,37 @@
+#!/bin/bash
+
+#
+# Function that creates a new snapshot
+#
+do_take()
+{
+  /bin/su -l vbox -c '/usr/bin/VBoxManage snapshot Windows_Server_2012 take "`date +%Y-%m-%d`"'
+}
+
+
+#
+# Function that deletes the last snapshot
+#
+do_delete()
+{
+  SS2DEL=$(su -l vbox -c 'VBoxManage showvminfo Windows_Server_2012' | grep Name | grep UUID | sed -n -e 's/^\(.*\)\(UUID: \)\([^\)]*\).*$/\3/p'  | awk '{print $1; exit}')
+
+  echo Deleting snapshot : $SS2DEL...
+  su -l vbox -c "vboxmanage snapshot Windows_Server_2012 delete $SS2DEL"
+
+}
+
+
+
+case "$1" in
+	take)
+		do_take
+		;;
+	delete)
+		do_delete
+		;;
+	*)
+		echo "Usage: $NAME {take|delete}" >&2
+		exit 3
+		;;
+esac
