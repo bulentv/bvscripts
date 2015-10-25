@@ -26,7 +26,7 @@ for(var i=2; i<process.argv.length; i++) {
   }
   if(argv == '-c' || argv == '--client') mode = 'c';
   if(argv == '-s' || argv == '--server') mode = 's';
-  if(argv == '-t' || argv == '--test') test = true;
+  if(argv == '-h' || argv == '--help') test = true;
 }
 
 if(test || process.argc < 6) {
@@ -40,7 +40,7 @@ if(test || process.argc < 6) {
     "-c, --client : Start in server mode\n"+
     "-d, --dns    : DNS server or dns listen ip:port\n"+
     "-a, --app    : Application server or listen ip:port\n"+
-    "-t, --test   : Check the parameters\n");
+    "-h, --help   : Print this info\n");
     
   process.exit(0);
 }
