@@ -31,6 +31,17 @@ for(var i=2; i<process.argv.length; i++) {
 
 if(test || process.argc < 6) {
   console.log({dns:dns, app:app, mode:mode});
+  console.log(
+    "Usage:\n"+
+    "node dns_tcp_tunnel.js [-s|-c]  -d ip:port -a ip:port\n"+
+    "\n"+
+    "Options:\n"+
+    "-s, --server : Start in server mode\n"+
+    "-c, --client : Start in server mode\n"+
+    "-d, --dns    : DNS server or dns listen ip:port\n"+
+    "-a, --app    : Application server or listen ip:port\n"+
+    "-t, --test   : Check the parameters\n");
+    
   process.exit(0);
 }
 
