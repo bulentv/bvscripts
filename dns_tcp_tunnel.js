@@ -8,7 +8,7 @@ var dnss = null;
 var dns = {};
 var app = {};
 var mode = null;
-var test = null;
+var help = null;
 
 for(var i=2; i<process.argv.length; i++) {
   var argv = process.argv[i];
@@ -29,7 +29,7 @@ for(var i=2; i<process.argv.length; i++) {
   if(argv == '-h' || argv == '--help') test = true;
 }
 
-if(test || process.argc < 6) {
+if(help || process.argv.length < 6) {
   console.log({dns:dns, app:app, mode:mode});
   console.log(
     "Usage:\n"+
