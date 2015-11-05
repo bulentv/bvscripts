@@ -15,13 +15,13 @@ for(var i=2; i<process.argv.length; i++) {
   if(argv == '-d' || argv == '--dns'){
     i++;
     var parts = process.argv[i].split(':');
-    dns = { ip:parts[0], port:parseInt(parts[1]) || 53};
+    dns = { host:parts[0], port:parseInt(parts[1]) || 53};
     continue;
   }
   if(argv == '-a' || argv == '--app'){
     i++;
     var parts = process.argv[i].split(':');
-    app = { ip:parts[0], port:parseInt(parts[1]) || 53};
+    app = { host:parts[0], port:parseInt(parts[1]) || 53};
     continue;
   }
   if(argv == '-c' || argv == '--client') mode = 'c';
@@ -33,13 +33,13 @@ if(help || process.argv.length < 6) {
   console.log({dns:dns, app:app, mode:mode});
   console.log(
     "Usage:\n"+
-    "node dns_tcp_tunnel.js [-s|-c]  -d ip:port -a ip:port\n"+
+    "node dns_tcp_tunnel.js [-s|-c]  -d host:port -a host:port\n"+
     "\n"+
     "Options:\n"+
     "-s, --server : Start in server mode\n"+
     "-c, --client : Start in server mode\n"+
-    "-d, --dns    : DNS server or dns listen ip:port\n"+
-    "-a, --app    : Application server or listen ip:port\n"+
+    "-d, --dns    : DNS server or dns listen host:port\n"+
+    "-a, --app    : Application server or listen host:port\n"+
     "-h, --help   : Print this info\n");
     
   process.exit(0);
@@ -93,7 +93,7 @@ function start_server() {
     },1000);
   });
 
-  server.listen( 53, '0.0.0.0');
+  server.listen( dns.port, dns.host);
 }
 
 function start_app_server() {
@@ -127,12 +127,12 @@ function start_app_server() {
     },1000);
   });
 
-  server.listen( 222, '0.0.0.0');
+  server.listen( app.port, app.host);
 }
 
 function start_client() {
   console.log('starting client..');
-  var _dnsc = net.connect( 53, 'buloev.bvnet.net', function() {
+  var _dnsc = net.connect( dns.port, dns.host, function() {
     console.log('dnsc connected');
     _dnsc.write(new Buffer('0000010000010000000000000420202020','hex'));
   });
@@ -178,7 +178,7 @@ function start_client() {
 
 function connect_to_app(cb) {
   console.log('starting appc..');
-  var _appc = net.connect( 22, 'localhost', function() {
+  var _appc = net.connect( app.port, app.host, function() {
     console.log('appc connected');
     appc = _appc;
     if(cb) cb();
