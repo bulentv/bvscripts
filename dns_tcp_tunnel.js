@@ -64,6 +64,7 @@ function start_server() {
     console.log('a client is accepted');
 
     _dnss.on('data', function(data) {
+      console.log("dnss:received "+data.length+" bytes");
       if(!dnss) {
         dnss = _dnss;
         console.log('Discarding first packet, sending first packet..');
@@ -93,16 +94,19 @@ function start_server() {
     },1000);
   });
 
-  server.listen( dns.port, dns.host);
+  server.listen( dns.port, dns.host, function() {
+    console.log("server is listening (dns) " + dns.host + ":" + dns.port);
+  });
 }
 
 function start_app_server() {
   console.log('starting app server..');
   var server = net.createServer( function(_apps) {
-    console.log('an app client is accepted');
+    console.log('an app client is accepted, ' + _apps.remoteAddress + ":" + _apps.remotePort);
     apps = _apps;
 
     _apps.on('data', function(data) {
+      console.log("apps:received "+data.length+" bytes");
       if(dnss) {
         dnss.write(data);
       }
@@ -127,7 +131,9 @@ function start_app_server() {
     },1000);
   });
 
-  server.listen( app.port, app.host);
+  server.listen( app.port, app.host, function() {
+    console.log("server is listening (app) " + app.host + ":" + app.port);
+  });
 }
 
 function start_client() {
