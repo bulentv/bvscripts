@@ -1,4 +1,3 @@
-
 var net = require('net');
 
 var appc = null;
@@ -12,6 +11,7 @@ var mode = null;
 var help = null;
 var id = 'default';
 var rport = null;
+var mport = null;
 var rapps = {};
 
 for(var i=2; i<process.argv.length; i++) {
@@ -38,6 +38,11 @@ for(var i=2; i<process.argv.length; i++) {
     rport = parseInt(process.argv[i]) || 222;
     continue;
   }
+  if(argv == '-m' || argv == '--mon'){
+    i++;
+    mport = parseInt(process.argv[i]) || 2121;
+    continue;
+  }
   if(argv == '-c' || argv == '--client') mode = 'c';
   if(argv == '-s' || argv == '--server') mode = 's';
   if(argv == '-h' || argv == '--help') test = true;
@@ -56,6 +61,7 @@ if(help || process.argv.length < 6) {
     "-d, --dns    : DNS server or dns listen host:port\n"+
     "-a, --app    : Application server or listen host:port\n"+
     "-r, --rport  : Remote port to request listen\n"+
+    "-m, --mon    : Monitoring service port\n"+
     "-h, --help   : Print this info\n");
     
   process.exit(0);
@@ -96,7 +102,6 @@ function start_server() {
           port: parts[1],
         }
         rapps[rapp.id+'_'+rapp.port] = JSON.parse(JSON.stringify(rapp));
-        rapps[rapp.id+'_'+rapp.port].clients = {};
         rapp.dnss = _dnss;
         start_app_server(rapp);
         rapp.dnss.write(new Buffer('0000818000010001000000000c000c0001000100000000000420202020','hex'));
@@ -142,8 +147,7 @@ function start_app_server(rapp) {
     console.log('an app client for ('+rapp.id+'#'+rapp.port+')is accepted, ' + _apps.remoteAddress + ":" + _apps.remotePort);
     rapp.apps = _apps;
 
-    var client_id = _apps.remoteAddress+'_'+_apps.remotePort;
-    rapps[rapp.id+'_'+rapp.port].clients[client_id] = true;
+    rapps[rapp.id+'_'+rapp.port].clients[_apps.remoteAddress+'_'+_apps.remotePort] = true;
 
     _apps.on('data', function(data) {
       console.log("apps:received "+data.length+" bytes");
@@ -153,7 +157,7 @@ function start_app_server(rapp) {
     });
 
     _apps.on('end', function() {
-      delete rapps[rapp.id+'_'+rapp.port].clients[client_id];
+      delete rapps[rapp.id+'_'+rapp.port].clients[_apps.remoteAddress+'_'+_apps.remotePort];
       rapp.apps = null;
       console.log('app client disconnected');
       if(rapp.dnss) {
@@ -197,8 +201,8 @@ function start_info_server() {
     console.log("error:",e);
   });
 
-  server.listen( 2121, "0.0.0.0", function() {
-    console.log("info server is listening 0.0.0.0:2121");
+  server.listen( mport, "0.0.0.0", function() {
+    console.log("info server is listening 0.0.0.0:mport");
   });
 }
 
@@ -283,3 +287,4 @@ function connect_to_app(cb) {
     appc = null;
   });
 }
+
