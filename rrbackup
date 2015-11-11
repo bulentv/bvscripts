@@ -1,0 +1,76 @@
+#!/bin/bash
+
+# BACKS UP DATA TO GOOGLE DRIVE, IT TAKES:
+# A BACKUP FOR EACH MINUTE IN THE LAST 60 MINUTES
+# A BACKUP FOR EACH HOUR IN THE LAST 24 HOURS
+# A BACKUP FOR EACH DAY IN THE LAST 31 DAYS
+# A BACKUP FOR EACH MONTH IN THE LAST 12 DAYS
+
+
+REDIS_PORT=$1
+UPDATE_CMD="redis-cli -p $REDIS_PORT BGSAVE; redis-cli -p $REDIS_PORT BGREWRITEAOF"
+BACKUP_FOLDER="/backup"
+BACKUP_NAME="K24_$REDIS_PORT"
+REMOTE_BACKUP_FOLDER="k24:K24_Backups"
+RCLONE="/usr/local/bin/rclone"
+
+MINUTE=`date +'%0M'`
+
+ARCHIVE_CMD="tar zcvf $BACKUP_FOLDER/$BACKUP_NAME/${BACKUP_NAME}_mi_$MINUTE.tar.gz /var/redis/$REDIS_PORT/dump.rdb /var/redis/$REDIS_PORT/appendonly.aof"
+
+HOUR=""
+DAY=""
+MONTH=""
+
+echo "Updating db..."
+eval $UPDATE_CMD
+echo "Waiting for 5 secs.."
+sleep 5
+echo $MINUTE
+
+if [ "$MINUTE" == "00" ];
+then
+  HOUR=`date +'%0H'`
+  echo "Hour is $HOUR"
+  if [ "$HOUR" == "00" ];
+  then
+    DAY=`date +'%0d'`
+    if [ "$DAY" == "01" ];
+    then
+      MONTH=`date +'%0m'`
+    fi
+  fi
+fi
+
+echo "Creating tmp dir : $BACKUP_FOLDER/$BACKUP_NAME"
+mkdir $BACKUP_FOLDER/$BACKUP_NAME
+
+echo "Creating minute backup for the minute $MINUTE"
+eval $ARCHIVE_CMD
+
+echo "Uploading minute backup to the google drive"
+$RCLONE copy $BACKUP_FOLDER/$BACKUP_NAME/${BACKUP_NAME}_mi_$MINUTE.tar.gz $REMOTE_BACKUP_FOLDER/$BACKUP_NAME/
+
+if [ "$HOUR" != "" ];
+then
+  echo "Creating hour backup for the hour $HOUR"
+  cp -rpf $BACKUP_FOLDER/$BACKUP_NAME/${BACKUP_NAME}_mi_$MINUTE.tar.gz $BACKUP_FOLDER/$BACKUP_NAME/${BACKUP_NAME}_ho_$HOUR.tar.gz
+  echo "Uploading hour backup to the google drive"
+  $RCLONE copy $BACKUP_FOLDER/$BACKUP_NAME/${BACKUP_NAME}_ho_$HOUR.tar.gz $REMOTE_BACKUP_FOLDER/$BACKUP_NAME/
+fi
+
+if [ "$DAY" != "" ];
+then
+  echo "Creating day backup for the day $DAY"
+  cp -rpf $BACKUP_FOLDER/$BACKUP_NAME/${BACKUP_NAME}_mi_$MINUTE.tar.gz $BACKUP_FOLDER/$BACKUP_NAME/${BACKUP_NAME}_da_$DAY.tar.gz
+  echo "Uploading day backup to the google drive"
+  $RCLONE copy $BACKUP_FOLDER/$BACKUP_NAME/${BACKUP_NAME}_da_$DAY.tar.gz $REMOTE_BACKUP_FOLDER/$BACKUP_NAME/
+fi
+
+if [ "$MONTH" != "" ];
+then
+  echo "Creating month backup for the month $MONTH"
+  cp -rpf $BACKUP_FOLDER/$BACKUP_NAME/${BACKUP_NAME}_mi_$MINUTE.tar.gz $BACKUP_FOLDER/$BACKUP_NAME/${BACKUP_NAME}_mo_$MONTH.tar.gz
+  echo "Uploading month backup to the google drive"
+  $RCLONE copy $BACKUP_FOLDER/$BACKUP_NAME/${BACKUP_NAME}_mo_$MONTH.tar.gz $REMOTE_BACKUP_FOLDER/$BACKUP_NAME/
+fi
