@@ -1,0 +1,47 @@
+#!/usr/bin/node
+var fs = require('fs');
+var moment = require('moment');
+var exec = require("child_process").exec;
+
+var buf = fs.readFileSync('/etc/bind/zone_template.conf','ascii');
+
+var domain = process.argv[2];
+var hostip = process.argv[3];
+
+var serial = moment().format("YYYYMMDD");
+
+var idx = parseInt(fs.readFileSync('/etc/bind/zone_idx') || 1)+1;
+serial = serial + idx;
+fs.writeFileSync('/etc/bind/zone_idx',idx);
+
+buf = buf.replace(/\%domain\%/g, domain).replace(/\%hostip\%/g,hostip).replace(/\%serial\%/g,serial);
+var zone_file = "/var/lib/bind/db."+domain;
+console.log("writing the zone file to " + zone_file);
+fs.writeFileSync(zone_file,buf);
+
+exec('chown bind.root ' + zone_file, function() {
+    exec('chown bind.root ' + zone_file, function() {
+
+            var tmpl = '// script insert\n'+
+            'zone "%domain%" {\n'+
+            '  type master;\n'+
+            '  file "/var/lib/bind/db.%domain%";\n'+
+            '};\n\n';
+
+            var zone_buf = tmpl.replace(/\%domain\%/g, domain);
+
+            var named_conf = "/etc/bind/named.conf.local";
+            buf = fs.readFileSync(named_conf,'ascii');
+
+            buf = buf.replace(/\/\/ script insert/, zone_buf);
+
+            console.log("writing the named.conf info to " + named_conf);
+            fs.writeFileSync(named_conf,buf);
+
+            console.log("reloading bind....");
+            exec('service bind9 reload', function() {
+                console.log("Done! :)");
+
+            });
+    });
+});
