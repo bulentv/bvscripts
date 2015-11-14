@@ -1,6 +1,6 @@
 var net = require('net');
 
-var VERSION = "v0.2.1"
+var VERSION = "v0.2.2"
 
 var appc = null;
 var dnsc = null;
@@ -54,7 +54,7 @@ var err = "";
 if(!dns) err += "Error: Please specify dns parameters (-d).\n";
 if(mode != 'c' && mode != 's') err += "Error: Please specify a 'mode' (-s or -c).\n";
 if(mode == 'c' && (!app.host || !app.port)) err += "Error: Please specify app parameters (-a).\n";
-if(mode == 's' && !rport) err += "Error: Please specify remote port request (-r).\n";
+if(mode == 'c' && !rport) err += "Error: Please specify remote port request (-r).\n";
 if(!mport) err += "Error: Please specify a monitoring port number (-m).\n";
 if(!id) err += "Error: Please specify an identifier (-i).\n";
 
