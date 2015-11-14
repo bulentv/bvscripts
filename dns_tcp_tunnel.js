@@ -1,5 +1,7 @@
 var net = require('net');
 
+var VERSION = "v0.2.1"
+
 var appc = null;
 var dnsc = null;
 var apps = null;
@@ -9,7 +11,7 @@ var dns = {};
 var app = {};
 var mode = null;
 var help = null;
-var id = 'default';
+var id = null;
 var rport = null;
 var mport = null;
 var rapps = {};
@@ -48,8 +50,17 @@ for(var i=2; i<process.argv.length; i++) {
   if(argv == '-h' || argv == '--help') test = true;
 }
 
-if(help || process.argv.length < 6) {
-  console.log({dns:dns, app:app, mode:mode});
+var err = "";
+if(!dns) err += "Error: Please specify dns parameters (-d).\n";
+if(mode != 'c' && mode != 's') err += "Error: Please specify a 'mode' (-s or -c).\n";
+if(mode == 'c' && (!app.host || !app.port)) err += "Error: Please specify app parameters (-a).\n";
+if(mode == 's' && !rport) err += "Error: Please specify remote port request (-r).\n";
+if(!mport) err += "Error: Please specify a monitoring port number (-m).\n";
+if(!id) err += "Error: Please specify an identifier (-i).\n";
+
+console.log("DNS Tunnel "+VERSION+" © 2015 Bulent Vural \n\n");
+if(help || err != '') {
+  console.log(err);
   console.log(
     "Usage:\n"+
     "node dns_tcp_tunnel.js [-s|-c]  -d host:port -a host:port\n"+
@@ -75,9 +86,6 @@ switch(mode) {
     break;
   case 'c':
     start_client();
-    break;
-  default:
-    console.log("[s]erver or [c]lient?");
     break;
 }
 start_info_server();
