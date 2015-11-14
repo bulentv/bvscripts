@@ -1,6 +1,7 @@
+#!/usr/bin/node
 var net = require('net');
 
-var VERSION = "v0.2.2"
+var VERSION = "v0.2.3"
 
 var appc = null;
 var dnsc = null;
