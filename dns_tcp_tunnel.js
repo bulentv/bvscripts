@@ -111,6 +111,7 @@ function start_server() {
           port: parts[1],
         }
         rapps[rapp.id+'_'+rapp.port] = JSON.parse(JSON.stringify(rapp));
+        rapps[rapp.id+'_'+rapp.port].clients = {};
         rapp.dnss = _dnss;
         start_app_server(rapp);
         rapp.dnss.write(new Buffer('0000818000010001000000000c000c0001000100000000000420202020','hex'));
