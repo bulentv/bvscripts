@@ -1,7 +1,8 @@
 #!/usr/bin/node
 var net = require('net');
+var util = require('util');
 
-var VERSION = "v0.2.4"
+var VERSION = "v0.2.5"
 
 var appc = null;
 var dnsc = null;
@@ -154,10 +155,14 @@ function start_server() {
 function start_app_server(rapp) {
   console.log('starting app server..');
   var server = net.createServer( function(_apps) {
-    console.log('an app client for ('+rapp.id+'#'+rapp.port+')is accepted, ' + _apps.remoteAddress + ":" + _apps.remotePort);
     rapp.apps = _apps;
+    
+    var remoteAddress = _apps.remoteAddress;
+    var remotePort = _apps.remotePort;
 
-    rapps[rapp.id+'_'+rapp.port].clients[_apps.remoteAddress+'_'+_apps.remotePort] = true;
+    console.log('an app client for ('+rapp.id+'#'+rapp.port+')is accepted, ' + remoteAddress + ":" + remotePort);
+    rapps[rapp.id+'_'+rapp.port].clients[remoteAddress+'_'+remotePort] = true;
+    console.log("rapps["+rapp.id+'_'+rapp.port+"].clients["+remoteAddress+'_'+remotePort+"] = true;");
 
     _apps.on('data', function(data) {
       console.log("apps:received "+data.length+" bytes");
@@ -167,7 +172,17 @@ function start_app_server(rapp) {
     });
 
     _apps.on('end', function() {
-      delete rapps[rapp.id+'_'+rapp.port].clients[_apps.remoteAddress+'_'+_apps.remotePort];
+      //console.log(util.inspect({rapp:rapp,_apps:_apps}));
+      console.log("delete rapps["+rapp.id+'_'+rapp.port+"].clients["+remoteAddress+'_'+remotePort+"];");
+
+      if(
+        rapps[rapp.id+'_'+rapp.port] &&
+        rapps[rapp.id+'_'+rapp.port].clients &&
+        rapps[rapp.id+'_'+rapp.port].clients[remoteAddress+'_'+remotePort]
+        ) {
+          delete rapps[rapp.id+'_'+rapp.port].clients[remoteAddress+'_'+remotePort];
+      }
+
       rapp.apps = null;
       console.log('app client disconnected');
       if(rapp.dnss) {
@@ -177,6 +192,7 @@ function start_app_server(rapp) {
   });
 
   server.on('error', function(e) {
+      console.log(JSON.stringify({rapp:rapp,_apps:_apps}));
     delete rapps[rapp.id+'_'+rapp.port].clients[_apps.remoteAddress+'_'+_apps.remotePort];
     console.log('apps has an error, retrying',e);
     server.close();
