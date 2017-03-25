@@ -8,7 +8,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/postfix
+~MSle0~/owered
 
 # Last Substitute Search Pattern:
 ~MSle0&6380
@@ -18,16 +18,51 @@ $
 
 # Command Line History (newest to oldest):
 :q!
-:wq!
-:q
-:tanb
+:tabe templates/mixins/
 :qa!
+:tabe templates/layouts/default.jade
+:tabe templates/views/index.jade
+:w
+:wq!
+:tabe models/User.js
+:W
+:tabe .env
+:q
+:tabe public/modify2.html
+:w public/modify2.html
+:tabe public/modify.html
+:tabe public/Us_election2016_2.html
+:w public/Us_election2016_2.html
+:tabe public/us2016_3.html
+:w public/us2016_3.html
+:w public/us2016.html!
+:w public/us2016.html
+:tabe public/us2016_2.html
+:w public/us2016_2.html
+:.,.+1!
+:tabe public/us2016.html
+:tabe public/Us_election2016.html
+:tabe st
+:tabe web/modify.html
+:tabe dataserver.js
+:tabe ds2.js
+:w ds2.js
+:tabe web/states_hash.json
+:tabe cnndata.js
+:wgtgt
+:tabe data_base.json
+:w data_base.json
+:tabe data.json
+:w public/us2016random.html
+:w!
+://static.ibncollege.com/wcsstore/ConsumerDirectStorefrontAssetStore/images/new/b_n_college01.pngU
+:tabe ~/dl
+:tabe dl
+:tanb
 :qA!
 :tabe /etc/group
 :tabe /etc/postfix/main.cf
 :wq
-:w
-:w!
 :set paste
 :W!
 :tabe /etc/openvpn/server.conf
@@ -53,12 +88,10 @@ $
 :tabe public/index.html
 :table 
 :tabe public/login.html
-:W
 :%s/6380//g
 :wqa!
 :tabe /etc/ntp.conf
 :tabe ../secim.js
-:.,.+1!
 :wq,
 :%s/Mayis/Mayıs/
 :tabe cizik.html
@@ -299,7 +332,6 @@ $
 :tabe sql/select_changed_titles.sql
 :tabe lua/UpdateJobs.lua
 :tabe lua/GetJobs.lua
-:tabe data.json
 :tabe lua/SaveTitle.lua
 :tabe sql/select_ObjectStatus.sql
 :tabe sql/select_changed_ObjectStatus.sql
@@ -459,10 +491,77 @@ $
 :set paset
 
 # Search String History (newest to oldest):
+?/owered
+?/ExecStart
+?/ie9
+?/sdsdf
+?/window
+?/catch
+?/useOri
+?/generalVotesClinton_mod
+?/general_resultsPercentageTrump_mod
+?/data_base.gene
+?/focus
+?/\.general
+?/random
+?/general_electoralVotes_mod
+?/#general_resultsPercentageClinton_val
+?/merge
+?/statusDi
+?/alert
+?/i
+?/bvnet
+?/progress
+?/democratic
+?/us2016
+?/Random
+?/percent_1
+?/\.clinton
+?/.clinton
+?/Hillary Cli
+?/H
+?/overall_percent_1
+?/percent
+?/80%
+?/70%
+?/$.get
+?/$get
+?/dataa
+?/\/data
+?/US Over
+?/provider
+?/ececec
+?/rgb(236, 236, 236)
+?/hover
+?/Use Ori
+?/UseOriginal
+?/mergeDa
+?/saveBtn
+?/console.log
+?/5001
+?/argv
+?/succ
+?/5000
+?/dfgdfg
+? \<states\>
+? \<parsePolitico\>
+?/data
+?/function dow
+?/sdfsdf
+?/total
+?/overallTit
+?/console.lo
+?/parsePoli
+?/states_has
+?/cnn
+?/reportingPer
+?/$(document).re
+?/document
+?/fs.wr
+?/states = 
 ?/postfix
 ?/mail
 ?/vmail
-?/5000
 ?/Warn
 ?/ 80
 ?/listen 80
@@ -491,7 +590,6 @@ $
 ?/config
 ?/initializeState
 ?/state
-?/sdfsdf
 ?/dsfsdf
 ?/init_rout
 ?/photo_
@@ -674,7 +772,6 @@ $
 ?/order
 ?/orderlist
 ?/save
-?/i
 ?/Kaydet
 ?/change
 ?/pages
@@ -889,7 +986,6 @@ $
 ?/cont
 ?/bold_text
 ?/font-wei
-?/hover
 ?/function getAnn
 ?/announce_list
 ?/listitem
@@ -1039,7 +1135,6 @@ $
 ?/attr("med
 ?/mediaele
 ?/contact_con
-?/focus
 ?/play
 ?/videojs
 ?//
@@ -1085,9 +1180,7 @@ $
 ?/o.res.page.da
 ?/function navigateS
 ?/|| 0
-?/alert
 ?/function navigate
-?/total
 ?/"blogpost"
 ?/navigateSectionPage
 ?/calling na
@@ -1098,67 +1191,6 @@ $
 ?/biore
 ?/.footer
 ?/biorez
-?/intro1gt
-?/biorezo
-?/glowing
-?/addblo
-?/:
-?/blogpost
-?/mtime
-?/bloglist
-?/#message
-?/New
-?/saved
-?/rows[0]
-?/blog_titl
-?/blog_co
-?/save_blogentry
-?/ads
-?/res.end
-?/router
-?/this
-?/s_title
-?/s_btn
-?/open
-?/closed
-?/.mi_
-?/slide_ti
-?/bf_wrapp
-?/post_content
-?/bg_pattern
-?/background-color:white
-?/white
-?/bottom
-?/ccc
-?/blog_comment_en
-?/.blog_fromusers
-?/color:
-?/pu
-?/blog_com
-?/blog_comm
-?/date
-?/time
-?/blog_fo
-?/post
-?/blog_
-?/blog_footer
-?/blog_left
-?/post_co
-?/-3
-?/bold
-?/adv
-?/rm_archive_ti
-?/rm_links_ti
-?/talk
-?/read
-?/pf_share
-?/images/blog/blog_icons.png)
-?/df
-?/37.
-?/_left
-?/place
-?/direction
-? orientation
 
 # Expression History (newest to oldest):
 
@@ -1168,28 +1200,61 @@ $
 
 # Registers:
 "0	LINE	0
-	http_port 123
-""1	LINE	0
-	Redistoor:$6$2DEflgt4$CnPdtzmAAXNxcS/FEJvQTE2T7abQmQL/n8PWSem3zYGRtb1i2VtvHEbj82ffztjTsvrC0ErvGQawWwj4SW80t1:16764:0:99999:7:::
+		password: { type: Types.Password, initial: true, required: true },
+"1	LINE	0
+			block footer
+				.auth-footer
+					| Powered by 
+					a(href='http://keystonejs.com', target='_blank', title='The Node.js CMS and web application platform (new window)') KeystoneJS
+			
 "2	LINE	0
-	444
-<|1|q0PWEvlwuNtiy9JQc/7lrVmCXXA=|5Gjz2+qMBr0iLVBJo+NUbgqlrwQ= ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDNb7MKBnJxQPTC2/8WGfeFY5wg9U7e5b6NR4aqqX3fmZJ+6j1/TQUQ8GOiQdI+Zg6J314BhqwLoDsCuNf6kMKcY599HS8NepNHbzgxYmOVbG5coeXhewMFIrzPcIyqVvBSMuNlvNOFTjnih9h6rufRDktZcy8Pi0dC81G7f/F9vCdzsohXqvuvdzu6TTNhY177GnaMpzAmkrZs+Lj3iX4q3ByhYwPp4f9s4s9oUNvaRpkk3WcRGU4xZ1aUOr2CZEOAkMCfRMNJY5qWGwZyFKkvEakh9jlPF6XxszJ6rRmg1wvg7Cs4FoeeUYfvbC71iUF3l/+dGbBUn5ofGguqPkiR
+	    "keystone": "^0.3.19"
 "3	LINE	0
-	444
-<|1|YmfoDEVHbH9fy+JmzfImuHf5Mjk=|29FKlUu2NweaIiZon6ciC9QtB18= ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDNb7MKBnJxQPTC2/8WGfeFY5wg9U7e5b6NR4aqqX3fmZJ+6j1/TQUQ8GOiQdI+Zg6J314BhqwLoDsCuNf6kMKcY599HS8NepNHbzgxYmOVbG5coeXhewMFIrzPcIyqVvBSMuNlvNOFTjnih9h6rufRDktZcy8Pi0dC81G7f/F9vCdzsohXqvuvdzu6TTNhY177GnaMpzAmkrZs+Lj3iX4q3ByhYwPp4f9s4s9oUNvaRpkk3WcRGU4xZ1aUOr2CZEOAkMCfRMNJY5qWGwZyFKkvEakh9jlPF6XxszJ6rRmg1wvg7Cs4FoeeUYfvbC71iUF3l/+dGbBUn5ofGguqPkiR
+	
 "4	LINE	0
-	ÿU«!F£Ý¶
+				//- You don't _have_ to include a link saying your site is powered by KeystoneJS, but we appreciate it!
+				p Powered by <a href="http://keystonejs.com" target="_blank">KeystoneJS</a>.
+	
 "5	LINE	0
+				//- You don't _have_ to include a link saying your site is powered by KeystoneJS, but we appreciate it!
+				p Powered by <a href="http://keystonejs.com" target="_blank">KeystoneJS</a>.
+	
 	
 "6	LINE	0
+	[Unit]
+	Description=High-performance, schema-free document-oriented database
+	After=network.target
+	Documentation=https://docs.mongodb.org/manual
 	
+	[Service]
+	User=mongodb
+	Group=mongodb
+	ExecStart=/usr/bin/mongod --quiet --config /etc/mongod.conf
+	# file size
+	LimitFSIZE=infinity
+	# cpu time
+	LimitCPU=infinity
+	# virtual memory size
+	LimitAS=infinity
+	# open files
+	LimitNOFILE=64000
+	# processes/threads
+	LimitNPROC=64000
+	# total threads (user+kernel)
+	TasksMax=infinity
+	TasksAccounting=false
+	
+	# Recommended limits for for mongod as specified in
+	# http://docs.mongodb.org/manual/reference/ulimit/#recommended-settings
+	
+	[Install]
+	WantedBy=multi-user.target
 "7	LINE	0
-	400
-<ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDNTotEB55uRlAS9sKUfT3WyJzq1kGQVVGQk9WPDmjgc6fvkubd3qRAE1lBQmZ+LjnHSSOcP54EoBTphiL+Lf2pFKkbFNYVGIdJBhRWUIDlm/vIGO4GCLfpPnRzrw3UsVLUykb68fFJXrPOfGC5Qj16nlrVY6gMO2p1pAmmBqkwPpyxbBkXkBFme3k95wl6Q6MWJLUXAEeTGuqzMukZHkA15hXxas5AKYRKAwrls9UrUqBXCy7Gp5lnq8m/RI0L8mNseB1hD1Fi/KQqVgwXXmXhjWDQqtzqF7Eh2woNhqojSpd9QlOO/LxPMKzgF9cStBcbkaQ5gXoO+zFYL2B/nRp1 root@vultr.guest
+	      console.log(l);
 "8	LINE	0
-	
+	      console.log("test");
 "9	LINE	0
-	REDIS0006þnnqweA
+	          console.log(l);
 "a	CHAR	0
 	pti	
 "q@	CHAR	0
@@ -1198,123 +1263,1148 @@ $
 	Vyp
 "t	CHAR	0
 	estu
-"-	CHAR	0
-	443
+""-	CHAR	0
+	password
 
 # File marks:
-'0  1  0  /tmp/crontab.08d8ff/crontab
-'1  3  397  ~/.ssh/authorized_keys
-'2  1  0  ~/i3/public/app/PlaylistWindow.js
-'3  57  0  ~/i3/PlaylistAdapter.js
-'4  41  0  /etc/shadow
-'5  186  12  /etc/init.d/parpudar
-'6  816  6  /home/parpudar/public_html/parpudar/app.js
-'7  1  0  /home/cenk/gitrepos/cenk/hebele
-'8  795  0  /home/cenk/logs/cenk.im.access.log
-'9  1  0  /home/cenk/cenkim/public_html/index.html
+'0  21  2  ~/my-site/templates/views/index.jade
+'1  26  23  ~/my-site/keystone.js
+'2  14  0  ~/my-site/keystone.js
+'3  1  0  ~/my-site/node_modules/keystone/templates/includes/auth-brand.jade
+'4  21  0  ~/my-site/node_modules/keystone/templates/layout/auth.jade
+'5  77  7  ~/my-site/node_modules/keystone/templates/layout/base.jade
+'6  53  1  ~/my-site/routes/middleware.js
+'7  41  0  ~/my-site/routes/index.js
+'8  1  0  ~/my-site/routes/views/index.js
+'9  11  23  ~/my-site/package.json
 
 # Jumplist (newest first):
--'  1  0  /tmp/crontab.08d8ff/crontab
--'  3  397  ~/.ssh/authorized_keys
--'  1  0  ~/.ssh/authorized_keys
--'  1  0  ~/i3/public/app/PlaylistWindow.js
--'  57  0  ~/i3/PlaylistAdapter.js
--'  1  0  ~/i3/PlaylistAdapter.js
--'  41  0  /etc/shadow
--'  1  0  /etc/shadow
--'  186  12  /etc/init.d/parpudar
--'  1  0  /etc/init.d/parpudar
--'  816  6  /home/parpudar/public_html/parpudar/app.js
--'  1  0  /home/parpudar/public_html/parpudar/app.js
--'  1  0  /home/cenk/gitrepos/cenk/hebele
--'  795  0  /home/cenk/logs/cenk.im.access.log
--'  1  0  /home/cenk/logs/cenk.im.access.log
--'  1  0  /home/cenk/cenkim/public_html/index.html
--'  1  0  /home/cenk/cenkmobi/public_html/index.html
--'  4  0  /etc/nginx/sites-enabled/bvnet.net
--'  1  0  /etc/nginx/sites-enabled/bvnet.net
--'  46  4  /etc/nginx/sites-enabled/default
--'  1  0  /etc/nginx/sites-enabled/default
--'  28  1  /etc/passwd
--'  1  0  /etc/passwd
--'  19  0  ~/.ssh/known_hosts
--'  1  0  ~/.ssh/known_hosts
--'  1  0  /mnt/binlin
--'  1  0  /etc/init.d/DbSecuritySpt
--'  1787  0  /var/log/rkhunter.log
--'  29  0  /var/log/rkhunter.log
--'  1  0  /var/log/rkhunter.log
--'  1  0  /mnt/conf.n
--'  1  0  /mnt/cmd.n
--'  1  0  /etc/rc.local
--'  43  0  /etc/openvpn/server.conf
--'  1  0  /etc/openvpn/server.conf
--'  81  0  /etc/openvpn/easy-rsa/2.0/keys/bvw2bvnet.ovpn
--'  1  0  /etc/openvpn/easy-rsa/2.0/keys/bvw2bvnet.ovpn
--'  1132  0  /etc/squid/squid.conf
--'  1053  33  /etc/squid/squid.conf
--'  631  19  /etc/squid/squid.conf
--'  494  22  /etc/squid/squid.conf
--'  73  33  /etc/squid/squid.conf
--'  1  0  /etc/squid/squid.conf
--'  633  20  /etc/squid/squid.conf
--'  628  19  /etc/squid/squid.conf
--'  1131  12  /etc/squid/squid.conf
--'  1130  12  /etc/squid/squid.conf
--'  637  21  /etc/squid/squid.conf
--'  1  0  /etc/squid.conf
--'  103  0  /etc/squid/squid.conf
--'  39  0  /etc/group
--'  1  0  /etc/group
--'  16  32  /etc/ssh/sshd_config
--'  1  0  /etc/ssh/sshd_config
--'  1  11  /etc/iptables/rules
--'  72  20  /etc/nginx/sites-enabled/bvnet.net
--'  15  0  /etc/iptables/rules
--'  78  2  /projects/ii/tools/build
--'  1  0  /projects/ii/tools/build
--'  42  8  /etc/nginx/sites-enabled/bvnet.net
--'  49  0  /etc/nginx/sites-enabled/bvnet.net
--'  69  37  /etc/nginx/sites-enabled/bvnet.net
--'  1  0  ~/NERD_tree_2
--'  5  0  ~/NERD_tree_2
--'  5  0  ~/NERD_tree_1
--'  1  0  ~/NERD_tree_1
--'  9  0  ~/NERD_tree_2
--'  9  0  ~/NERD_tree_1
--'  8  13  ~/jamp/webix/package.json
--'  1  0  ~/jamp/webix/package.json
--'  4  25  ~/jamp/webix/codebase/package.json
--'  5  6  ~/jamp/webix/codebase/package.json
--'  1  0  ~/jamp/webix/codebase/package.json
--'  77  0  /home/bvnet/public_html/g2bvnet.ovpn
--'  1  0  /home/bvnet/public_html/g2bvnet.ovpn
--'  299  0  /etc/openvpn/server2.conf
--'  1  0  /etc/openvpn/server2.conf
--'  52  0  /etc/openvpn/server2.conf
--'  1  0  /etc/openvpn/easy-rsa/2.0/keys/bvnb2bvnet.crt
--'  440  14  /etc/squid/squid.conf
--'  441  20  /etc/squid/squid.conf
--'  621  0  /etc/squid/squid.conf
--'  433  0  /etc/squid/squid.conf
--'  439  0  /etc/squid/squid.conf
--'  616  14  /etc/squid/squid.conf
--'  538  13  /etc/squid/squid.conf
--'  423  0  /etc/squid/squid.conf
--'  72  2  /etc/squid/squid.conf
--'  60  10  /etc/squid/squid.conf
--'  46  10  /etc/squid/squid.conf
--'  43  8  /etc/squid/squid.conf
--'  36  14  /etc/squid/squid.conf
--'  25  0  /etc/squid/squid.conf
--'  78  0  /etc/openvpn/easy-rsa/2.0/keys/bvmob.ovpn
--'  14  0  /etc/openvpn/easy-rsa/2.0/keys/bvmob.ovpn
--'  103  10  ~/secim2015/secim-2015.js
--'  1  0  ~/secim2015/secim-2015.js
--'  142  0  ~/secim2015/secim-2015.js
--'  1  0  ~/secim2015/secim-2015
+-'  21  2  ~/my-site/templates/views/index.jade
+-'  1  0  ~/my-site/templates/views/index.jade
+-'  26  23  ~/my-site/keystone.js
+-'  27  0  ~/my-site/keystone.js
+-'  1  0  ~/my-site/keystone.js
+-'  14  0  ~/my-site/keystone.js
+-'  1  0  ~/my-site/node_modules/keystone/templates/includes/auth-brand.jade
+-'  21  0  ~/my-site/node_modules/keystone/templates/layout/auth.jade
+-'  26  2  ~/my-site/node_modules/keystone/templates/layout/auth.jade
+-'  1  0  ~/my-site/node_modules/keystone/templates/layout/auth.jade
+-'  77  7  ~/my-site/node_modules/keystone/templates/layout/base.jade
+-'  1  0  ~/my-site/node_modules/keystone/templates/layout/base.jade
+-'  53  1  ~/my-site/routes/middleware.js
+-'  1  0  ~/my-site/routes/middleware.js
+-'  41  0  ~/my-site/routes/index.js
+-'  1  0  ~/my-site/routes/index.js
+-'  1  0  ~/my-site/routes/views/index.js
+-'  11  23  ~/my-site/package.json
+-'  1  0  ~/my-site/package.json
+-'  1  0  ~/my-site/models/User.js
+-'  23  0  ~/my-site/templates/views/index.jade
+-'  1  0  ~/my-site/templates/layouts/default.jade
+-'  67  2  ~/my-site/templates/layouts/default.jade
+-'  1  0  updates/0.0.1-admins.js
+-'  9  35  ~/my-site/templates/layouts/default.jade
+-'  1  0  ~/my-site/templates/layouts/defa
+-'  1  0  ~/my-site/templates/layouts/defq
+-'  22  0  ~/my-site/templates/views/index.jade
+-'  25  3  ~/my-site/templates/mixins/flash-messages.jade
+-'  1  0  ~/my-site/templates/mixins/flash-messages.jade
+-'  88  6  ~/my-site/templates/layouts/default.jade
+-'  87  63  ~/my-site/templates/layouts/default.jade
+-'  90  0  ~/my-site/templates/layouts/default.jade
+-'  91  2  ~/my-site/templates/layouts/default.jade
+-'  85  2  ~/my-site/templates/layouts/default.jade
+-'  35  0  ~/my-site/templates/layouts/default.jade
+-'  2  31  ~/my-site/.env
+-'  1  0  ~/my-site/.env
+-'  12  96  ~/my-site/updates/0.0.1-admins.js
+-'  1  0  ~/my-site/updates/0.0.1-admins.js
+-'  45  0  ~/my-site/keystone.js
+-'  43  0  ~/myproject/keystone.js
+-'  1  0  ~/myproject/keystone.js
+-'  1  0  ~/myproject/models/User.js
+-'  44  0  ~/myproject/keystone.js
+-'  1  0  ~/myproject/.env
+-'  13  1  ~/myproject/update/0.0.1-admin.js
+-'  1  0  ~/myproject/update/0.0.1-admin.js
+-'  25  20  templates/mixins/flash-messages.jade
+-'  1  0  templates/mixins/flash-messages.jade
+-'  31  11  templates/layouts/base.jade
+-'  1  0  templates/layouts/base.jade
+-'  4  17  ~/myproject/templates/views/index.jade
+-'  1  0  ~/myproject/templates/views/index.jade
+-'  9  0  ~/myproject/views/index.js
+-'  1  0  ~/myproject/views/index.js
+-'  60  1  ~/myproject/routes/middleware.js
+-'  1  0  ~/myproject/routes/middleware.js
+-'  35  0  ~/myproject/routes/index.js
+-'  1  0  ~/myproject/routes/index.js
+-'  1  0  ~/myproject/models/users.js
+-'  13  15  ~/myproject/models/users.js
+-'  1  21  ~/myproject/models.index.js
+-'  27  16  ~/myproject/web.js
+-'  1  0  ~/myproject/web.js
+-'  16  0  ~/myproject/package.json
+-'  1  0  ~/myproject/package.json
+-'  2  0  ~/myproject/keystone.js
+-'  15  0  ~/myproject/models/User.js
+-'  9  3  /lib/systemd/system/mongod.service
+-'  1  0  /lib/systemd/system/mongod.service
+-'  2  0  /lib/systemd/system/mongod.service
+-'  13  0  /lib/systemd/system/mongod.service
+-'  14  0  /lib/systemd/system/mongod.service
+-'  25  25  /lib/systemd/system/mongod.service
+-'  2  396  /root/.ssh/authorized_keys
+-'  1  0  /root/.ssh/authorized_keys
+-'  1  396  /root/ssh/authorized_keys
+-'  1299  82  ~/wcsstore/ConsumerDirectStorefrontAssetStore/test.js
+-'  1527  1  ~/wcsstore/ConsumerDirectStorefrontAssetStore/test.js
+-'  1  0  ~/wcsstore/ConsumerDirectStorefrontAssetStore/test.js
+-'  1407  27  ~/wcsstore/ConsumerDirectStorefrontAssetStore/test.js
+-'  565  4  ~/wcsstore/ConsumerDirectStorefrontAssetStore/test.js
+-'  91  5  ~/wcsstore/ConsumerDirectStorefrontAssetStore/test.js
+-'  90  23  ~/wcsstore/ConsumerDirectStorefrontAssetStore/test.js
+-'  55  8  ~/wcsstore/ConsumerDirectStorefrontAssetStore/test.js
+-'  17  17  ~/wcsstore/ConsumerDirectStorefrontAssetStore/test.js
+-'  23  26  ~/wcsstore/ConsumerDirectStorefrontAssetStore/test.js
+-'  1747  0  ~/wcsstore/ConsumerDirectStorefrontAssetStore/test.js
+-'  1  0  /etc/nginx/sites-available/bvnet.net
+-'  1  0  /etc/nginx/sites-available/default
+-'  154  12  /home/bvnet/public_html/us2016/public/modify.html
+-'  249  10  /home/bvnet/public_html/us2016/public/modify.html
+-'  222  48  /home/bvnet/public_html/us2016/public/modify.html
+-'  221  42  /home/bvnet/public_html/us2016/public/modify.html
+-'  160  37  /home/bvnet/public_html/us2016/public/modify.html
+-'  92  40  /home/bvnet/public_html/us2016/public/modify.html
+-'  172  37  /home/bvnet/public_html/us2016/public/modify.html
+-'  136  12  /home/bvnet/public_html/us2016/public/modify.html
 
 # History of marks within files (newest to oldest):
+
+> ~/my-site/templates/views/index.jade
+	"	21	2
+
+> ~/my-site/keystone.js
+	"	26	23
+	.	27	0
+	+	26	23
+	+	27	0
+
+> ~/my-site/templates/layouts/default.jade
+	"	1	0
+	^	9	36
+	.	9	35
+	+	91	0
+	+	87	0
+	+	9	35
+
+> ~/my-site/models/User.js
+	"	21	1
+	^	14	26
+	.	14	25
+	+	19	0
+	+	21	0
+	+	14	25
+
+> ~/my-site/node_modules/keystone/templates/includes/auth-brand.jade
+	"	1	0
+
+> ~/my-site/node_modules/keystone/templates/layout/auth.jade
+	"	21	0
+	.	21	0
+	+	21	0
+
+> ~/my-site/node_modules/keystone/templates/layout/base.jade
+	"	77	7
+
+> ~/my-site/routes/middleware.js
+	"	53	1
+
+> ~/my-site/routes/index.js
+	"	41	0
+
+> ~/my-site/routes/views/index.js
+	"	1	0
+
+> ~/my-site/package.json
+	"	11	23
+	^	14	24
+	.	11	23
+	+	12	20
+	+	11	0
+	+	9	22
+	+	12	0
+	+	11	23
+
+> updates/0.0.1-admins.js
+	"	1	0
+
+> ~/my-site/templates/layouts/defa
+	"	1	0
+
+> ~/my-site/templates/layouts/defq
+	"	1	0
+
+> ~/my-site/templates/mixins/flash-messages.jade
+	"	25	3
+
+> ~/my-site/.env
+	"	2	31
+	^	2	32
+	.	2	31
+	+	2	31
+
+> ~/my-site/updates/0.0.1-admins.js
+	"	12	96
+	^	12	97
+	.	12	96
+	+	12	96
+
+> ~/myproject/keystone.js
+	"	43	0
+
+> ~/myproject/models/User.js
+	"	1	0
+
+> ~/myproject/.env
+	"	1	0
+
+> ~/myproject/update/0.0.1-admin.js
+	"	13	1
+	^	13	2
+	.	13	0
+	+	13	0
+
+> templates/mixins/flash-messages.jade
+	"	25	20
+	^	25	21
+	.	25	0
+	+	25	0
+
+> templates/layouts/base.jade
+	"	31	11
+	^	31	12
+	.	31	9
+	+	31	9
+
+> ~/myproject/templates/views/index.jade
+	"	4	17
+	^	4	18
+	.	4	12
+	+	4	12
+
+> ~/myproject/views/index.js
+	"	9	0
+	^	9	1
+	.	9	0
+	+	9	0
+
+> ~/myproject/routes/middleware.js
+	"	60	1
+	^	60	2
+	.	60	0
+	+	60	0
+
+> ~/myproject/routes/index.js
+	"	35	0
+	^	35	1
+	.	35	0
+	+	35	0
+
+> ~/myproject/models/users.js
+	"	1	0
+	^	13	16
+	.	13	13
+	+	13	13
+
+> ~/myproject/models.index.js
+	"	1	21
+	^	1	22
+	.	1	19
+	+	1	19
+
+> ~/myproject/web.js
+	"	27	16
+	^	27	17
+	.	27	14
+	+	27	14
+
+> ~/myproject/package.json
+	"	16	0
+	^	16	1
+	.	16	0
+	+	16	0
+
+> /lib/systemd/system/mongod.service
+	"	9	3
+	^	9	41
+	.	9	40
+	+	14	6
+	+	25	19
+	+	15	0
+	+	12	26
+	+	9	40
+
+> /root/.ssh/authorized_keys
+	"	2	396
+	^	2	397
+	.	2	385
+	+	2	385
+
+> /root/ssh/authorized_keys
+	"	1	396
+	^	1	397
+	.	1	385
+	+	1	385
+	+	1	385
+
+> ~/wcsstore/ConsumerDirectStorefrontAssetStore/test.js
+	"	1299	82
+	^	1299	83
+	.	1299	82
+	+	1	0
+	+	1747	0
+	+	1747	5
+	+	1	7
+	+	1	15
+	+	1	12
+	+	1	15
+	+	1	169
+	+	1	304
+	+	1747	0
+	+	1	0
+	+	1746	0
+	+	3	15
+	+	56	37
+	+	57	42
+	+	23	0
+	+	20	29
+	+	565	25
+	+	565	0
+	+	565	13
+	+	565	4
+	+	565	4
+	+	565	0
+	+	565	35
+	+	565	35
+	+	565	0
+	+	565	5
+	+	565	0
+	+	565	0
+	+	565	0
+	+	565	0
+	+	565	0
+	+	565	16
+	+	565	0
+	+	565	0
+	+	565	29
+	+	565	40
+	+	565	0
+	+	565	14
+	+	565	22
+	+	565	0
+	+	565	0
+	+	565	28
+	+	565	17
+	+	565	0
+	+	565	2
+	+	565	0
+	+	20	0
+	+	565	0
+	+	565	0
+	+	564	0
+	+	528	0
+	+	565	8
+	+	565	0
+	+	1744	0
+	+	1689	0
+	+	5	0
+	+	1481	0
+	+	576	0
+	+	586	0
+	+	1662	0
+	+	1247	0
+	+	1527	0
+	+	1527	0
+	+	1298	7
+	+	1299	0
+	+	1300	9
+	+	1299	82
+
+> /etc/hosts
+	"	4	0
+
+> /etc/nginx/sites-available/bvnet.net
+	"	1	0
+	^	26	26
+	.	33	0
+	+	21	0
+	+	23	45
+	+	25	0
+	+	29	0
+	+	27	0
+	+	28	3
+	+	25	42
+	+	26	41
+	+	28	22
+	+	25	21
+	+	26	20
+	+	33	0
+
+> /etc/nginx/sites-available/default
+	"	1	0
+
+> /home/bvnet/public_html/us2016/dataserver.js
+	"	87	34
+	^	87	35
+	.	87	34
+	+	191	95
+	+	188	15
+	+	260	12
+	+	272	19
+	+	140	45
+	+	140	8
+	+	140	30
+	+	140	52
+	+	140	10
+	+	140	0
+	+	140	14
+	+	140	10
+	+	140	39
+	+	141	8
+	+	140	0
+	+	140	25
+	+	140	0
+	+	140	33
+	+	140	25
+	+	140	8
+	+	140	0
+	+	188	4
+	+	260	12
+	+	272	15
+	+	217	0
+	+	165	0
+	+	65	18
+	+	69	27
+	+	72	89
+	+	100	2
+	+	70	2
+	+	63	2
+	+	100	0
+	+	89	34
+	+	96	2
+	+	96	16
+	+	90	35
+	+	96	0
+	+	90	39
+	+	95	4
+	+	95	0
+	+	91	77
+	+	92	71
+	+	93	65
+	+	90	22
+	+	96	0
+	+	93	39
+	+	92	47
+	+	91	49
+	+	90	0
+	+	91	0
+	+	96	0
+	+	95	0
+	+	91	0
+	+	96	0
+	+	98	61
+	+	30	38
+	+	49	0
+	+	44	54
+	+	72	74
+	+	99	16
+	+	90	26
+	+	91	23
+	+	92	24
+	+	93	25
+	+	92	23
+	+	96	0
+	+	94	0
+	+	155	39
+	+	156	19
+	+	217	2
+	+	217	72
+	+	217	69
+	+	217	48
+	+	217	45
+	+	217	0
+	+	210	0
+	+	201	26
+	+	209	2
+	+	202	5
+	+	202	0
+	+	73	25
+	+	88	8
+	+	97	2
+	+	89	0
+	+	83	25
+	+	72	82
+	+	84	24
+	+	88	0
+	+	83	0
+	+	73	15
+	+	74	28
+	+	74	0
+	+	75	0
+	+	82	0
+	+	85	26
+	+	86	27
+	+	85	72
+	+	86	71
+	+	87	34
+
+> /home/bvnet/public_html/us2016/public/us2016.html
+	"	1	0
+	^	361	29
+	.	361	28
+	+	281	27
+	+	317	63
+	+	323	0
+	+	318	0
+	+	329	0
+	+	324	22
+	+	325	0
+	+	326	0
+	+	330	49
+	+	288	0
+	+	285	45
+	+	286	44
+	+	288	0
+	+	287	35
+	+	290	0
+	+	288	88
+	+	289	84
+	+	54	40
+	+	55	0
+	+	291	68
+	+	293	0
+	+	292	81
+	+	294	0
+	+	293	24
+	+	298	0
+	+	296	20
+	+	299	0
+	+	297	68
+	+	295	78
+	+	294	44
+	+	291	43
+	+	294	43
+	+	367	28
+	+	361	28
+	+	367	28
+	+	361	28
+
+> /home/bvnet/public_html/us2016/data.json
+	"	1	0
+	^	412	1
+	.	412	0
+	+	1	1
+	+	412	0
+
+> /home/bvnet/public_html/us2016/data_base.json
+	"	1	31
+	^	9	30
+	.	8	31
+	+	8	32
+	+	9	30
+	+	8	31
+	+	9	29
+	+	8	32
+	+	16	32
+	+	17	29
+	+	24	31
+	+	25	29
+	+	32	31
+	+	33	29
+	+	32	31
+	+	25	29
+	+	24	31
+	+	17	29
+	+	16	31
+	+	9	29
+	+	8	31
+	+	5	26
+	+	16	31
+	+	8	31
+	+	8	31
+	+	9	29
+	+	8	36
+	+	8	31
+	+	9	29
+	+	8	31
+	+	9	29
+	+	8	31
+
+> /home/bvnet/public_html/us2016/public/Us_election2016.html
+	"	399	20
+	^	399	53
+	.	399	52
+	+	399	52
+
+> /home/bvnet/public_html/us2016/cnndata.js
+	"	21	0
+	.	21	0
+	+	1	53
+	+	22	0
+	+	22	0
+	+	4	0
+	+	21	37
+	+	21	2
+	+	21	2
+	+	1	0
+	+	3	0
+	+	21	19
+	+	1	24
+	+	21	0
+	+	21	32
+	+	21	0
+	+	21	0
+	+	21	33
+	+	21	3
+	+	21	31
+	+	21	0
+	+	21	0
+	+	21	71
+	+	21	0
+	+	21	0
+	+	2	22
+	+	21	3
+	+	21	46
+	+	21	45
+	+	21	24
+	+	21	18
+	+	21	21
+	+	21	27
+	+	21	0
+	+	21	15
+	+	21	25
+	+	21	4
+	+	21	17
+	+	21	14
+	+	21	21
+	+	21	8
+	+	21	12
+	+	21	0
+	+	21	36
+	+	21	38
+	+	21	6
+	+	21	44
+	+	21	56
+	+	21	8
+	+	21	0
+	+	21	0
+	+	21	66
+	+	21	49
+	+	21	41
+	+	21	26
+	+	21	21
+	+	21	7
+	+	21	45
+	+	21	43
+	+	21	0
+	+	21	18
+	+	21	28
+	+	21	23
+	+	21	28
+	+	21	35
+	+	21	0
+	+	21	29
+	+	21	22
+	+	21	0
+	+	21	0
+	+	21	28
+	+	21	24
+	+	21	29
+	+	21	78
+	+	21	76
+	+	21	56
+	+	21	51
+	+	21	10
+	+	21	0
+	+	21	50
+	+	21	43
+	+	21	53
+	+	21	52
+	+	21	22
+	+	21	0
+	+	21	0
+	+	21	14
+	+	21	14
+	+	21	21
+	+	21	0
+	+	22	31
+	+	22	2
+	+	22	41
+	+	22	2
+	+	22	0
+	+	4	0
+	+	21	0
+
+> /home/bvnet/public_html/us2016/web/states_hash.json
+	"	1	0
+
+> /home/bvnet/public_html/us2016/ds2.js
+	"	1	0
+	^	96	43
+	.	50	14
+	+	99	0
+	+	84	18
+	+	50	14
+	+	147	39
+	+	201	43
+	+	107	0
+	+	106	65
+	+	105	25
+	+	83	35
+	+	86	32
+	+	96	42
+	+	50	14
+
+> /home/bvnet/public_html/us2016/web/modify.html
+	"	1	0
+	^	1	0
+
+> /home/bvnet/public_html/us2016/public/modify.html
+	"	181	0
+	.	154	0
+	+	31	15
+	+	33	0
+	+	52	31
+	+	177	0
+	+	183	0
+	+	56	0
+	+	56	24
+	+	56	24
+	+	56	53
+	+	56	51
+	+	56	42
+	+	56	87
+	+	56	86
+	+	56	87
+	+	56	78
+	+	56	0
+	+	56	0
+	+	56	60
+	+	56	58
+	+	56	48
+	+	56	42
+	+	56	53
+	+	56	51
+	+	56	41
+	+	56	39
+	+	56	39
+	+	56	84
+	+	56	82
+	+	56	70
+	+	56	68
+	+	116	0
+	+	116	0
+	+	116	33
+	+	116	33
+	+	116	44
+	+	116	42
+	+	116	43
+	+	116	42
+	+	116	43
+	+	116	42
+	+	116	43
+	+	116	44
+	+	116	102
+	+	116	0
+	+	54	31
+	+	56	0
+	+	219	133
+	+	80	20
+	+	87	19
+	+	80	0
+	+	81	30
+	+	82	30
+	+	83	31
+	+	85	29
+	+	86	29
+	+	94	0
+	+	80	0
+	+	148	0
+	+	144	0
+	+	133	0
+	+	132	0
+	+	160	0
+	+	158	55
+	+	159	56
+	+	160	54
+	+	161	54
+	+	178	0
+	+	180	0
+	+	178	26
+	+	179	0
+	+	25	15
+	+	83	38
+	+	84	40
+	+	220	35
+	+	225	0
+	+	224	11
+	+	223	141
+	+	224	0
+	+	221	0
+	+	223	0
+	+	221	12
+	+	223	12
+	+	221	59
+	+	222	58
+	+	223	0
+	+	221	13
+	+	222	13
+	+	221	49
+	+	222	47
+	+	221	50
+	+	222	48
+	+	246	33
+	+	250	0
+	+	247	0
+	+	249	0
+	+	247	50
+	+	249	0
+	+	248	37
+	+	153	35
+	+	154	0
+
+> /home/bvnet/public_html/us2016/public/us2016_2.html
+	"	314	22
+	^	169	48
+	.	314	0
+	+	130	17
+	+	131	19
+	+	133	15
+	+	140	0
+	+	137	21
+	+	137	32
+	+	137	20
+	+	139	25
+	+	139	0
+	+	137	20
+	+	138	28
+	+	133	0
+	+	140	20
+	+	138	27
+	+	127	0
+	+	125	8
+	+	126	28
+	+	182	38
+	+	127	0
+	+	133	26
+	+	133	28
+	+	133	0
+	+	133	0
+	+	127	26
+	+	163	49
+	+	138	27
+	+	140	0
+	+	137	19
+	+	138	27
+	+	137	0
+	+	132	34
+	+	346	32
+	+	164	57
+	+	182	39
+	+	164	58
+	+	170	66
+	+	171	88
+	+	172	79
+	+	173	0
+	+	175	63
+	+	127	0
+	+	136	17
+	+	367	54
+	+	373	0
+	+	369	22
+	+	373	0
+	+	368	68
+	+	370	0
+	+	373	0
+	+	370	43
+	+	371	65
+	+	367	39
+	+	370	46
+	+	305	69
+	+	306	80
+	+	315	66
+	+	316	80
+	+	307	0
+	+	312	0
+	+	309	55
+	+	317	0
+	+	322	0
+	+	319	61
+	+	300	35
+	+	34	23
+	+	491	0
+	+	484	0
+	+	486	82
+	+	487	0
+	+	489	80
+	+	490	0
+	+	485	43
+	+	488	43
+	+	346	0
+	+	159	50
+	+	158	58
+	+	169	42
+	+	155	37
+	+	158	52
+	+	169	46
+	+	99	0
+	+	99	8
+	+	99	97
+	+	99	21
+	+	99	114
+	+	99	47
+	+	89	29
+	+	99	0
+	+	98	0
+	+	91	8
+	+	92	8
+	+	100	18
+	+	101	35
+	+	169	47
+	+	169	0
+	+	304	0
+	+	314	0
+	+	300	35
+	+	305	0
+	+	314	0
+
+> /home/bvnet/public_html/us2016/public/us2016_3.html
+	"	157	15
+	^	157	33
+	.	157	0
+	+	145	0
+	+	145	11
+	+	145	0
+	+	145	0
+	+	145	16
+	+	145	0
+	+	150	0
+	+	151	22
+	+	155	23
+	+	152	33
+	+	158	0
+	+	156	24
+	+	143	28
+	+	152	38
+	+	156	31
+	+	151	23
+	+	151	0
+	+	153	29
+	+	157	0
+
+> /home/bvnet/public_html/us2016/public/Us_election2016_2.html
+	"	399	82
+	^	399	83
+	.	399	82
+	+	399	82
+
+> /home/bvnet/public_html/us2016/public/modify2.html
+	"	66	0
+	^	84	50
+	.	84	49
+	+	54	31
+	+	62	0
+	+	55	30
+	+	61	41
+	+	56	16
+	+	57	16
+	+	58	16
+	+	61	0
+	+	59	16
+	+	65	26
+	+	66	0
+	+	80	53
+	+	81	51
+	+	82	41
+	+	83	39
+	+	60	34
+	+	71	0
+	+	70	31
+	+	78	92
+	+	79	0
+	+	84	49
+
+> /etc/nginx/sites-enabled/us2016.kurdistan24.tv
+	"	18	29
+	^	18	30
+	.	18	29
+	+	1	25
+	+	1	0
+	+	1	23
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	20
+	+	1	18
+	+	1	21
+	+	22	1
+	+	18	29
+
+> ~/wcsstore/ConsumerDirectStorefrontAssetStore/javascript_new_ui/updatedscript.js
+	"	2695	16
+	^	2716	20
+	.	2716	19
+	+	2716	19
+
+> ~/wcsstore/ConsumerDirectStorefrontAssetStore/javascript_new_ui/dl
+	"	1	0
+
+> ~/dl
+	"	17	0
+	.	16	98
+	+	1	54
+	+	1	4
+	+	1	0
+	+	1	16
+	+	1	1
+	+	1	0
+	+	1	0
+	+	1	6
+	+	1	15
+	+	1	1
+	+	1	2
+	+	1	6
+	+	1	1
+	+	1	30
+	+	1	2
+	+	1	0
+	+	1	2
+	+	1	20
+	+	1	2
+	+	1	0
+	+	1	4
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	88
+	+	16	98
+
+> /home/bvnet/public_html/us2016/parse_politico.js
+	"	18	15
+	^	18	16
+	.	18	16
+	+	72	0
+	+	72	92
+	+	72	14
+	+	72	0
+	+	72	95
+	+	72	0
+	+	72	108
+	+	72	56
+	+	72	0
+	+	72	78
+	+	72	43
+	+	72	28
+	+	72	100
+	+	72	0
+	+	72	0
+	+	72	0
+	+	72	0
+	+	72	0
+	+	72	0
+	+	72	23
+	+	72	23
+	+	72	50
+	+	22	0
+	+	19	2
+	+	10	13
+	+	17	11
+	+	33	0
+	+	7	0
+	+	23	0
+	+	22	19
+	+	72	0
+	+	79	26
+	+	150	0
+	+	82	0
+	+	80	15
+	+	81	2
+	+	80	6
+	+	147	3
+	+	81	0
+	+	59	18
+	+	67	17
+	+	70	3
+	+	68	29
+	+	73	4
+	+	76	0
+	+	68	28
+	+	60	31
+	+	147	0
+	+	146	10
+	+	79	24
+	+	65	0
+	+	60	32
+	+	60	46
+	+	61	40
+	+	64	10
+	+	24	15
+	+	23	14
+	+	24	20
+	+	23	10
+	+	24	0
+	+	27	8
+	+	100	0
+	+	109	16
+	+	121	21
+	+	124	21
+	+	129	0
+	+	133	0
+	+	131	25
+	+	132	25
+	+	134	27
+	+	135	29
+	+	134	23
+	+	26	0
+	+	29	0
+	+	60	34
+	+	62	46
+	+	63	33
+	+	12	0
+	+	11	29
+	+	14	19
+	+	15	27
+	+	18	16
+
+> /tmp/crontab.OYeziQ/crontab
+	"	23	0
+	^	23	1
+	.	23	0
+	+	23	0
+
+> /tmp/crontab.SqzVkn/crontab
+	"	1	0
+
+> /tmp/crontab.yj6JJg/crontab
+	"	24	0
+	^	24	0
+	.	23	123
+	+	23	123
+
+> /tmp/crontab.lefpi2/crontab
+	"	22	0
+	.	23	0
+	+	2	0
+	+	1	0
+	+	23	0
+
+> /tmp/crontab.a9BHDt/crontab
+	"	23	122
+	^	23	123
+	.	23	118
+	+	23	118
 
 > /tmp/crontab.08d8ff/crontab
 	"	1	0
@@ -1528,468 +2618,3 @@ $
 
 > ~/jamp/webix/codebase/webix_debug.js
 	"	1	0
-
-> /home/bvnet/public_html/g2bvnet.ovpn
-	"	77	0
-	^	77	0
-	.	76	6
-	+	76	6
-
-> /etc/openvpn/server2.conf
-	"	299	0
-	^	299	0
-	.	195	28
-	+	32	8
-	+	53	0
-	+	52	0
-	+	96	14
-	+	187	26
-	+	195	0
-	+	196	28
-	+	195	28
-
-> /etc/openvpn/easy-rsa/2.0/keys/bvnb2bvnet.crt
-	"	1	0
-
-> ~/bvscripts/ovpnkey
-	"	1	0
-
-> ~/bvscripts/test@test.com.ovpn
-	"	6	23
-	^	6	24
-	.	6	23
-	+	5	21
-	+	6	23
-
-> /etc/openvpn/easy-rsa/2.0/keys/bvmob.ovpn
-	"	78	0
-	.	78	0
-	+	35	3
-	+	14	3
-	+	13	6
-	+	2	0
-	+	3	0
-	+	4	0
-	+	6	0
-	+	7	0
-	+	8	0
-	+	9	0
-	+	10	0
-	+	11	0
-	+	12	0
-	+	13	0
-	+	14	0
-	+	5	0
-	+	4	20
-	+	37	5
-	+	60	6
-	+	62	5
-	+	78	4
-	+	59	20
-	+	77	29
-	+	78	0
-
-> ~/secim2015/secim-2015.js
-	"	103	10
-	^	57	9
-	.	57	8
-	+	156	36
-	+	171	23
-	+	156	34
-	+	171	24
-	+	156	51
-	+	171	0
-	+	171	0
-	+	157	20
-	+	160	16
-	+	171	0
-	+	172	23
-	+	172	0
-	+	160	15
-	+	156	0
-	+	161	19
-	+	166	24
-	+	160	18
-	+	159	26
-	+	161	21
-	+	157	30
-	+	166	28
-	+	172	0
-	+	155	0
-	+	172	0
-	+	182	0
-	+	176	19
-	+	177	19
-	+	178	19
-	+	179	19
-	+	180	19
-	+	181	19
-	+	125	0
-	+	120	0
-	+	119	19
-	+	119	19
-	+	119	19
-	+	125	0
-	+	116	19
-	+	117	19
-	+	118	19
-	+	119	19
-	+	120	19
-	+	121	19
-	+	122	19
-	+	123	19
-	+	124	19
-	+	4	14
-	+	7	0
-	+	5	39
-	+	6	17
-	+	4	11
-	+	40	54
-	+	4	29
-	+	5	0
-	+	8	25
-	+	40	33
-	+	8	40
-	+	9	11
-	+	12	0
-	+	10	14
-	+	11	24
-	+	12	1
-	+	40	28
-	+	8	33
-	+	74	68
-	+	72	30
-	+	65	47
-	+	15	21
-	+	16	27
-	+	17	0
-	+	14	15
-	+	75	15
-	+	141	0
-	+	14	9
-	+	16	7
-	+	65	46
-	+	66	57
-	+	72	32
-	+	74	94
-	+	75	0
-	+	140	53
-	+	140	0
-	+	140	53
-	+	140	68
-	+	138	40
-	+	74	78
-	+	58	8
-	+	56	7
-	+	58	7
-	+	58	6
-	+	54	3
-	+	55	2
-	+	56	2
-	+	57	3
-	+	58	0
-	+	57	0
-	+	54	8
-	+	55	7
-	+	56	7
-	+	57	8
-
-> ~/secim2015/secim-2015
-	"	1	0
-
-> ~/dtt.js
-	"	1	0
-
-> /usr/local/bin/dtt
-	"	2	0
-	^	2	0
-	.	1	22
-	+	1	22
-
-> /etc/network/if-up.d/iptables
-	"	1	0
-	.	2	0
-	+	2	0
-
-> /etc/default/iodine
-	"	4	27
-	^	4	28
-	.	4	27
-	+	3	18
-	+	4	14
-	+	5	23
-	+	4	27
-
-> /etc/init.d/iodined
-	"	60	0
-
-> /etc/iptables.conf
-	"	41	0
-	^	73	58
-	.	22	73
-	+	22	73
-
-> ~/tmp/ondns/ondns.js
-	"	139	0
-	^	287	23
-	.	73	0
-	+	73	0
-	+	188	18
-	+	189	27
-	+	201	47
-	+	201	19
-	+	200	58
-	+	201	0
-	+	219	55
-	+	200	55
-	+	309	20
-	+	225	19
-	+	199	44
-	+	199	18
-	+	217	0
-	+	199	0
-	+	198	41
-	+	216	0
-	+	217	0
-	+	286	39
-	+	288	28
-	+	287	22
-	+	354	0
-	+	357	0
-	+	73	0
-
-> ~/tmp/us.js
-	"	1	25
-	^	44	26
-	.	44	25
-	+	44	18
-	+	6	0
-	+	44	15
-	+	36	19
-	+	36	0
-	+	36	0
-	+	14	27
-	+	11	12
-	+	14	29
-	+	16	25
-	+	11	0
-	+	13	0
-	+	14	28
-	+	15	11
-	+	36	9
-	+	20	0
-	+	36	0
-	+	36	9
-	+	22	0
-	+	36	0
-	+	17	10
-	+	21	10
-	+	23	10
-	+	20	2
-	+	24	0
-	+	22	6
-	+	26	6
-	+	36	16
-	+	18	11
-	+	25	10
-	+	12	5
-	+	28	13
-	+	30	2
-	+	29	15
-	+	35	2
-	+	27	3
-	+	22	5
-	+	26	5
-	+	27	24
-	+	32	26
-	+	33	23
-	+	34	2
-	+	36	0
-	+	44	25
-
-> ~/udptunnel-read-only/README
-	"	1	0
-
-> ~/tmp/dnss.js
-	"	30	45
-	^	30	46
-	.	30	45
-	+	88	9
-	+	88	10
-	+	88	36
-	+	10	15
-	+	88	37
-	+	88	47
-	+	88	0
-	+	89	2
-	+	88	0
-	+	88	0
-	+	88	0
-	+	12	0
-	+	88	0
-	+	12	0
-	+	14	0
-	+	12	65
-	+	12	2
-	+	12	0
-	+	12	0
-	+	12	39
-	+	88	15
-	+	95	16
-	+	12	49
-	+	14	0
-	+	95	16
-	+	13	62
-	+	14	59
-	+	13	50
-	+	88	137
-	+	14	42
-	+	88	0
-	+	17	39
-	+	87	4
-	+	19	28
-	+	87	8
-	+	88	0
-	+	88	10
-	+	87	0
-	+	88	0
-	+	88	4
-	+	88	0
-	+	88	23
-	+	88	30
-	+	88	21
-	+	88	39
-	+	16	0
-	+	17	30
-	+	18	20
-	+	19	0
-	+	86	0
-	+	49	14
-	+	50	23
-	+	85	0
-	+	88	4
-	+	39	0
-	+	51	0
-	+	88	0
-	+	77	0
-	+	88	0
-	+	4	24
-	+	5	38
-	+	5	6
-	+	5	10
-	+	38	0
-	+	22	42
-	+	23	0
-	+	22	41
-	+	26	8
-	+	22	37
-	+	25	0
-	+	27	42
-	+	36	10
-	+	36	9
-	+	36	0
-	+	36	0
-	+	28	0
-	+	36	0
-	+	27	36
-	+	8	16
-	+	61	17
-	+	71	13
-	+	62	26
-	+	63	0
-	+	67	26
-	+	68	0
-	+	67	32
-	+	81	32
-	+	82	0
-	+	23	28
-	+	10	11
-	+	11	0
-	+	23	0
-	+	75	27
-	+	30	45
-	+	34	21
-	+	30	45
-	+	34	0
-	+	30	45
-	+	34	0
-	+	30	45
-
-> ~/tmp/udpserver.js
-	"	14	4
-	^	14	5
-	.	14	5
-	+	17	23
-	+	8	0
-	+	1	14
-	+	2	0
-	+	17	15
-	+	6	19
-	+	8	0
-	+	15	0
-	+	13	62
-	+	11	8
-	+	12	27
-	+	9	31
-	+	11	8
-	+	12	25
-	+	10	25
-	+	14	9
-	+	11	0
-	+	4	9
-	+	8	5
-	+	13	9
-	+	17	5
-	+	14	5
-
-> ~/udpserver.js
-	"	1	0
-
-> ~/.bash_history
-	"	1	0
-
-> ~/gfresh.js
-	"	66	2
-	.	63	0
-	+	73	6
-	+	5	0
-	+	51	0
-	+	53	22
-	+	58	6
-	+	54	0
-	+	59	11
-	+	59	23
-	+	53	23
-	+	53	19
-	+	56	11
-	+	59	27
-	+	53	9
-	+	257	2
-	+	77	7
-	+	255	0
-	+	77	0
-	+	258	0
-	+	256	17
-	+	76	23
-	+	1	48
-	+	2	0
-	+	1	33
-	+	76	26
-	+	51	0
-	+	46	4
-	+	47	21
-	+	53	0
-	+	59	0
-	+	72	0
-	+	66	3
-	+	65	20
-	+	70	3
-	+	69	27
-	+	45	4
-	+	47	7
-	+	49	7
-	+	56	9
-	+	65	25
-	+	61	0
-	+	62	21
-	+	63	0
