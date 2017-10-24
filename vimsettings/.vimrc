@@ -634,3 +634,8 @@ function! XTermPasteBegin()
   set paste
   return ""
 endfunction
+
+let @c = '€kh/var:nohcwconst'
+let @l = '€kh/var:nohcwlet'
+let @f = '€kh/function:nohdw/):noha =>'
+let @t = '€kh/self:nohcwthis'
