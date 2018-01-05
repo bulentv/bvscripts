@@ -1,0 +1,21 @@
+#!/bin/bash
+
+SUBNET=$1;
+START=$2;
+END=$3;
+
+if [[ "$1" == "-h" ]] || [[ "$#" -lt 3 ]]; then
+  echo "Usage: pinger <subnet (x.x.x)> <min> <max>";
+  exit 1;
+fi
+
+
+for i in `seq $START $END`;
+do
+  ping -c 1 -w 1 $SUBNET.$i > /dev/null 2>&1;
+  if [[ $? -eq "0" ]]; then
+    echo "$SUBNET.$i OK";
+  else
+    echo -e "\033[31m$SUBNET.$i UNREACHABLE\033[0m";
+  fi
+done
