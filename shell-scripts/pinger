@@ -1,21 +1,78 @@
 #!/bin/bash
 
-SUBNET=$1;
-START=$2;
-END=$3;
+arr=();
+min="";
+max="";
+IP_LIST=();
 
-if [[ "$1" == "-h" ]] || [[ "$#" -lt 3 ]]; then
-  echo "Usage: pinger <subnet (x.x.x)> <min> <max>";
+if [[ "$1" == "-h" ]] || [[ "$#" -lt 1 ]]; then
+  echo "Usage: pinger <first octet>.<second octet>.<third octet>.<fourth octet>";
+  echo "";
+  echo "You can specifiy a range by putting a hypen between minimum and maximum values.";
+  echo "Example: pinger 192.168.0.11-33";
   exit 1;
 fi
 
+ARG_STR=$1;
 
-for i in `seq $START $END`;
-do
-  ping -c 1 -w 1 $SUBNET.$i > /dev/null 2>&1;
-  if [[ $? -eq "0" ]]; then
-    echo "$SUBNET.$i OK";
+# Split the arguments string in to an array
+args=(${ARG_STR//./ });
+OCTET_1=${args[0]};
+OCTET_2=${args[1]};
+OCTET_3=${args[2]};
+OCTET_4=${args[3]};
+
+set_min_max () {
+  local octet="$1";
+
+  # If the given octet has a hypen then it is a range
+  if [[ $octet == *"-"* ]]; then
+    local arr=(${octet//-/ });
+    min=${arr[0]};
+    max=${arr[1]};
   else
-    echo -e "\033[31m$SUBNET.$i UNREACHABLE\033[0m";
+    min=$octet;
+    max=$octet;
   fi
-done
+}
+
+update_list() {
+  local list=();
+
+  # If IP list has no items then just add the octets
+  if [[ ${#IP_LIST[@]} -eq 0 ]]; then
+    for i in `seq $min $max`; do
+      list+=("$i");
+    done;
+  else
+    # If IP list has items than loop through every time to append the current octet
+    for i in `seq $min $max`; do
+      for j in "${IP_LIST[@]}"; do
+        list+=("$j.$i");
+      done;
+    done;
+  fi
+
+  IP_LIST=("${list[@]}")
+}
+
+set_min_max $OCTET_1;
+update_list;
+
+set_min_max $OCTET_2;
+update_list;
+
+set_min_max $OCTET_3;
+update_list;
+
+set_min_max $OCTET_4;
+update_list;
+
+for IP in "${IP_LIST[@]}"; do
+  timeout 0.1 ping -c 1 $IP > /dev/null 2>&1;
+  if [[ $? -eq "0" ]]; then
+    echo "$IP OK";
+  else
+    echo -e "\033[31m$IP UNREACHABLE\033[0m";
+  fi
+done;
