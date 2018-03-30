@@ -10,7 +10,7 @@
 
 TUNNELNAME="tunnelnamehere"
 SSHHOST="example.com"
-SSHHOST=$(/usr/local/bin/opendnsgetip ${SSHHOST})
+SSHIP=$(/usr/local/bin/opendnsgetip ${SSHHOST})
 SSHUSER="tunnel"
 SSHPORT="9922"
 TUNNELS=(
@@ -32,7 +32,7 @@ do
 done
 
 start() {
-  $AUTOSSH -M 0 -N -T -f  $SSHUSER@$SSHHOST -p $SSHPORT $TUNNELS_STR -o "UserKnownHostsFile $TUNNELNAME" -o "StrictHostKeyChecking no" -o "ServerAliveInterval 30" -o "ServerAliveCountMax 3" 
+  $AUTOSSH -M 0 -N -T -f  $SSHUSER@$SSHIP -p $SSHPORT $TUNNELS_STR -o "UserKnownHostsFile $TUNNELNAME" -o "StrictHostKeyChecking no" -o "ServerAliveInterval 30" -o "ServerAliveCountMax 3" 
   echo "Service started" >&2
 }
 
