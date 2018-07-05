@@ -8,1189 +8,29 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/owered
-
-# Last Substitute Search Pattern:
-~MSle0&6380
-
-# Last Substitute String:
-$
+~MSle0~/blank
 
 # Command Line History (newest to oldest):
 :q!
-:tabe templates/mixins/
-:qa!
-:tabe templates/layouts/default.jade
-:tabe templates/views/index.jade
-:w
 :wq!
-:tabe models/User.js
-:W
-:tabe .env
-:q
-:tabe public/modify2.html
-:w public/modify2.html
-:tabe public/modify.html
-:tabe public/Us_election2016_2.html
-:w public/Us_election2016_2.html
-:tabe public/us2016_3.html
-:w public/us2016_3.html
-:w public/us2016.html!
-:w public/us2016.html
-:tabe public/us2016_2.html
-:w public/us2016_2.html
-:.,.+1!
-:tabe public/us2016.html
-:tabe public/Us_election2016.html
-:tabe st
-:tabe web/modify.html
-:tabe dataserver.js
-:tabe ds2.js
-:w ds2.js
-:tabe web/states_hash.json
-:tabe cnndata.js
-:wgtgt
-:tabe data_base.json
-:w data_base.json
-:tabe data.json
-:w public/us2016random.html
-:w!
-://static.ibncollege.com/wcsstore/ConsumerDirectStorefrontAssetStore/images/new/b_n_college01.pngU
-:tabe ~/dl
-:tabe dl
-:tanb
-:qA!
-:tabe /etc/group
-:tabe /etc/postfix/main.cf
+:tabe ~/.vimrc
+:help :prevn
+:qa!
+:w
+:tabe config/recorder.config.test4.json5
+:tabe config/recorder.config.test3.json5
+:tabe config/recorder.config.test2.json5
+:tabe config/recorder.config.syriatv.json5
 :wq
-:set paste
-:W!
-:tabe /etc/openvpn/server.conf
-:Q!
-:
-:set nopaste
-:s
-:tabe webservice.js
-:tabe ~/projects/incoder
-:tabe config/default.json5
-:tabe redis.js
-:tabe state.js
-:tabe public/app.js
-:tabe ~/projects/incoder/
-:tabe glmodule.js
-:tabe gatelog.js
-:tabe public/css/site.css
-:tabe public/js/site.js
-:tabe lua/getTotalStays.lua
-:tabe /etc/redis/6379.conf
-:tabe config/local.json5
-:tabe a.js
-:tabe public/index.html
-:table 
-:tabe public/login.html
-:%s/6380//g
-:wqa!
-:tabe /etc/ntp.conf
-:tabe ../secim.js
-:wq,
-:%s/Mayis/MayÄ±s/
-:tabe cizik.html
-:tabe  /var/opt/gitlab/nginx/conf/gitlab-http.conf
-:tabe /etc/nginx/nginx.conf
-:tabe watcher.js
-:tabe watcher2.js
-:tabe test_watcher.js
-:tabe /root/projects/infinity/app.js
-:tabe /root/projects/infinity/config/local.json5
-:tabe app.js
-:tabe config/local.json5o
-:tabe server/util/state.js
-:tabe infinity.json
-:%s/\$SERVER/\$DNS_SERVER/g
-:%s/IPADDR/ADDRESS/g
-:tabe server/web/data.js
-:tabe client/js/infinity/app.js
-:tabe server/lua/functions.lua
-:tabe server/playout/playout-engine.js
-:tabe client/js/infinity/mask_input.js
-:tabe .node-dev.json
-:wQ!
-:paste
-:help
-:'<,'>s/^(.)e/\1f/g
-:q1
-:tabe src/node.js
-:Q
-:tabe static/templates/blog.ejs
-:.,.+1!
-:tabe static/js/site.js
-:'<,'>s/lb_/vid_/g
-:'<,'>s/_lb/_vid/g
-:tabe static/templates/admin_blog.ejs
-:7
-:w!app.js
-:tabe static/templates/admin_pages.ejs
-:tabe static/templates/admin_asset.ejs
-:tabe static/templates/admin_addet.ejs
-:w static/templates/admin_addet.ejs
-:tabe static/js/admin.js
-:tabe static/templates/admin_gallery.ejs
-:w static/templates/admin_gallery.ejs
-:tabe static/templates/admin_fromusers.ejs
-:tabe static/templates/admin_menu.ejs
-:tabe static/templates/admin_massmail.ejs
-:tabe static/templates/write_fromusers.ejs
-:tabe static/templates/write_comment.ejs
-:tabe static/templates/contact.ejs
-:tabe static/templates/index.ejs
-:tabe static/templates/blog_head.ejs
-:tabe static/templates/head.ejs
-:tabe static/templates/
-:tabe static/templates/about.ejs
-:/overlau
-:tabe static/templates/soon.ejs
-:tabe static/templates/subject.ejs
-:tabe static/templates/admin_loginform.ejs
-:tabe static/templates/admin_index.ejs
-:tabe static/css/site.css
-:%s/_demo/\"+__dummyflag__+\"/g
-:%s
-:tabe static/templates/announce.ejs
-:tabe static/templates/press.ejs
-:tabe static/templates/video.ejs
-:w'
-:tabe static/templates/admin_terms.ejs
-:tabe static/templates/admin_privacy.ejs
-:tabe static/templates/fromusers.ejs
-:T
-:tabe 
-:tabe static/templates/head-offline.ejs4gt
-:ta
-:tabe static/templates/slider.ejs
-:tabe static/templates/i
-:tabe static/templates/intro.ejs
-:'<,'>s/privacy/terms/g
-:w static/templates/admin_privacy.ejs
-:w static/templates/privacy.ejs
-:tabe static/templates/terms.ejs
-:tabe static/templates/privacy.ejs
-:tabe static/templates/use.ejs
-:tabe static/js/ejs-dev-1.0.js
-:tabe static/js/ejs.js
-:tabe static/js/ejs_production.js
-:tabe static/templates/header.ejs
-:w static/templates/about.ejs
-:tabe static/templates/about
-:%s/biorezonans/about/g
-:w static/templates/cat.ejs
-:%s/#38c/#62a7d1/g
-:tabe stat
-:tabe
-:tabe static/templates/blog_header.ejs
-:'<,'>s/q_/qp./g
-:tab
-:tabe static/templates/blog_comments.ejs
-:tabe static/templates/admin_blog_comments.ejs
-:w static/templates/write_fromusers.ejs
-:w static/templates/fromusers_write.ejs
-:tabe static/templates//bf_
-:'<,'>s/this/.active_thumb/g
-:tabe static/basinda/
-:w! ../site.js
-:w ../site.js
-:tabe static/js/site.new.js
-:tabe static/js/site.old.js
-:'<,'>s/\\////g
-:tabe static/js/vjs.youtube.js
-:w static/templates/press.ejs
-:tabe static/templates/gallery.ejs
-://www.burcinalpacar.com/tr/Yalin_Hali.aspx
-:%s/ccc/dadada/g
-:%s/eee/f2f2f2/g
-:%s/eee/f2f2f2/h
-:tabe static/css/bulo_select.css
-:tabe static/js/bulo_select.js
-:'<,'>s/option/li/g
-:'<,'>s/span/div/g
-:tabe static/templates/footer.ejs
-:tabe static/css/admin.css
-:w static/templates/intro.ejs
-:tabe static/templates/empty.ejs
-:tabe static/templates/admin_entry.ejs
-:tabe s
-:'<,'>s/this/player/g
-:W1
-:.,.+1!gt
-:%s/orientation/direction/g
-:tabe Splitter.js
-:tabe splitter-test.js
-:Set paste
-:tabe index.html
-:tabe Mo
-:w index2.html
-:tabe min.test.js
-:tabe fdw.css
-:/asdas
-:wviminfo
-:set number
-:%s/bulo/BULO/g
-:tabe proxy.js
-:tabe fdw.js
-::
-:tabe dockwindow.js
-:tabe DockContainer.js
-:tabe Movable.js
-:tabe test.js
-:w DockContainer.js
-:'<,'>s/self/this/g
-:Set number
-:'<,'>s/screen/parent/g
-:tabe test3.css
-:tabe test3.html
-:w1
-:wÃ©
-:'<,'>s/50/min_size/g
-:%s/_moving/_resizing/g
-:tabe aa
-:tabe test3.js
-:tabe q.tra
-:q.txt
-:set nonumber
-:help :split
-:sp
-:%s/lead/Lead/g
-:tabe B.js
-:tabe core/www/login.html
-:w core/www/login.html
-:Set nonumber
-:tabe core/www/css/site.css
-:tabe core/www/index.html
-:tabe core/www/sitejs/site.js
-:tabe db/DaletSQLs.js
-:'<,'>s/padding/border/g
-:'<,'>s/\$e/_wnd.$()/g
-:%s/height()/outerHeight()/g
-:%s/width()/outerWidth()/g
-:%s/height()/heightWidth()/g
-:tabe ~/InfinityJS/src/core/www/css/site.css
-:tabe ~/InfinityJS/src/core/www/sitejs/site.js
-:tabe ~/InfinityJS/src/core/www/index.html
-:tabe fd
-:tabe webix/compact.css
-:tabe webix/webix.css
-:'<,'>s/230/100/g
-:'<,'>s/ pos/ _pos/g
-:'<,'>s/ top/ _top/g
-:tabe b
-:tabe a
-:%s/getElement/$/g
-:%s/getJ/$/g
-:%s/getElement/getJ/g
-:s/getElement/getJ/g
-:tabe *.html
-:tabe ../core/www/sitejs/site.js
-:tabe ../lua/saveword.lua
-:tabe ../lua/SaveTitle.lua
-:tabe ../core/inf_core.js
-:tabe ../lua/GetTitles.lua
-:tabe node_modules/tedious/lib/connection.js
-:tabe c
-:Tabe b
-:tabe node_modules/tedious-connection-pool/lib/connection-pool.js
-:tabe node_modules/tedious-connection-pool/lib/pooled-connection.js
-:e
-:tabe ../InfinityJS.git/
-:tabe pooled-connection.js
-:w connection-pool.js
-:tabe tedious-pool.js
-:tabe db.js
-:tabe ~/InfinityJS/src/db/db.js
-:tabe ~/InfinityJS/src/sql/select_changed_titles.sql
-:tabe ~/InfinityJS/src/sql/select_titles.sql
-:tabe ~/InfinityJS/src/db/SnellSQL.js
-:tabe node_modules/tedious-connection-pool/
-:tabe node_modules/tedious-connection-pool/node_modules/generic-pool/
-:tabe sql/select_changed_titles_in_class.sql
-:tabe sql/select_titles.sql
-:tabe lua/GetTitles.lua
-:tabe lua/GetCats.lua
-:tabe core/www/js/webix/codebase/webix_debug.js
-:tabe sql/select_INSTANCE.sql
-:tabe sql/select_changed_INSTANCE.sql
-:tabe sql/select_changed_ITEM.sql
-:tabe db/SnellSQL.js
-:.!
-:tabe core/inf_core.js
-:tabe batch
-:tabe ../sql/select_INSTANCE.sql
-:tabe ../sql/select_changed_INSTANCE.sql
-:tabe ../lua/set_TOTAL_AIR_COUNT.lua
-:tabe ../sql/
-:tabe ../lua/set_INSTANCE_Details.lua
-:tabe ../../src/sql/select_changed_INSTANCE.sql
-:tabe ../../src/sql/select_changed_ITEM.sql
-:tabe sql/select_changed_titles.sql
-:tabe lua/UpdateJobs.lua
-:tabe lua/GetJobs.lua
-:tabe lua/SaveTitle.lua
-:tabe sql/select_ObjectStatus.sql
-:tabe sql/select_changed_ObjectStatus.sql
-:set pste
-:tabe /home/Administrator/InfinityJS/src/core/inf_core.js
-:tabe 22.js
-:tabe Excel/Workbook.js
-:tabe Excel/RelationshipManager.js
-:tabe Excel/util.js
-:et number
-:tabe excel-builder.js
-:w sql/select_ObjectStatus.sql
-:tabe ../lua/DelCategory.lua
-:tabe ../sch/tmpl_MainEvent.xmlt
-:tabe ../sch/
-:tabe www/css/site.css
-:tabe www/index.html
-:%s/cmenu/contextMenuPlaylist/g
-:tabe www/sitejs/site.js
-:tabe ../db/SnellSQL.js
-:w lua/GetTitlesByIdList.lua
-:tabe lua/set_TOTAL_AIR_COUNT.lua
-:w lua/set_TOTAL_AIR_COUNT.lua
-:tabe lua/UpdateProgress.lua
-:tabe db/db.js
-:w db/SnellSQL.js
-:tabe sql/select_changed_BrokerJobs.sql
-:tabe sql/select_ITEM.sql
-:tabe sql/select_classes.sql
-:tabe sql/select_changed_classes.sql
-:%s/statusLabel/statusLabelSelected/g
-:%s/item.duration/ms2TC(item.duration)/g
-:%s/item.start_time/formatTime(item.start_time)/g
-:s/item.start_time/formatTime(item.start_time)/g
-:s/item\.start_time/formatTime(item.start_time)/g
-:tabe sch/tmpl_MaterialEvent.xmlt
-:tabe sch/tmpl_MainEvent.xmlt
-:tabe sch/sch.js
-:set
-:tabe core/www/sitejs/mask_input.js
-:set nopast3e
-:tabe core/www/js/jquery/jquery.maskedinput.js
-:tabe core/www/sitejs/util.js
-:'<,'>s/class/cls/g
-:Set nopaste
-:'<,'>s/self/grid/g
-:set number off
-:tabe inf_core.js
-:tabe non_cluster.js
-:tabe logger/logger.js
-:pt
-:tn
-:tabe logger.js
-:tabe /etc/nginx/mime.types
-:tabe /etc/init.d/proftpd
-:tabe .screenrc
-:tabe .bashrc
-:tabe ./.bashrc
-:tabe ~/.bashrc
-:taba .bashrc
-:tabe .screen/configs/tunnel
-:tabe t
-:tabe ~/.screen
-:tabe /etc/init.d/killprocs
-:tabe client.conf
-:w views
-:tabn
-:tabp
-:tabe static/stylesheets/styles.css
-:Bookmark
-:BookmarkToRoot rasat
-:BookmarkToRoot
-:NERDTree
-:del"
-:help NERDTreeInvalidBookmarks
-:! test
-:%/url/ferit/
-:r
-:tabe start-server.js
-:tabe /etc/vboxtool/vboxtool.conf
-:%s/ ()//
-:%s/\: //
-:%s/possible pw found//
-:%s/ \(\)//
-:%s/possible pw found\: //
-:s/possible pw found\: //
-:tabe app/controller/MediaHandlerPanel.js
-:tabe app/view/MediaHandlerPanel.js
-:tabe app/controller/MediaHandlers.js
-:tabe app/view/MediaHandlers.js
-:qa
-:tabe js/
-:tabe js/rasat/app.js
-:tabe lib/eventengine.js
-:tabe lib/HandlerEngine.js
-:tabe lib/mediahandler.js
-:tabe templates/main.body.tmpl.html
-:tabe ../Dalet/Windows\ Server\ 2003\ Standard\ Edition-cl1.vmdk
-:tabe templates/
-:tabe test.txt
-:pabe test.txt
-:tabe lib/
-:NER
-:%s/\r//g
-:%s/\r/\r/g
-:%s/^M//g
-:set fileformat=unix
-:'<,'>:e ++ff=unix
-:e ++ff=unix
-:set ff=unix
-:e +ff=dos
-:update
-:%s/
-:q!Ã©
-:u
-:tabe app/model/User.js
-:tabe app/store/Users.js
-:tabe app/view/user/Edit.js
-:tabe app/view/user/List.js
-:tabe ../js/
-:tabe app/controller/Users.js
-:set paste 
-:tabe js/rasat/view/MediaHandlerPanel.js
-:tabe js/rasat/view/MediaHandlers.js
-:tabe js/rasat/controller/MediaHandlerPanel.js
-:tabe js/extjs-4.1.0/ext-all.js
-:C-X
-:tabe ../node_modules/request/
-:tabe http.js
-:tabe soap.js
-:tabe ../node_modules/request/index.js
-:tabe client.js
-:tabe opctester.h
-:set past
-:tabe /etc/init.d/init_screens
-:tabe www/
-:tabe 
-:w!'
-:tabe ~/gatelog/gatelog.js
-:%s/a-zA-Z0-9-/a-zA-Z0-9-ÄžÃœÅžÄ°Ã–Ã‡ÄŸÃ¼ÅŸÄ±Ã¶Ã§/g
-:%s/YYYYMMDDHHmmss/YYYY.MM.DD_HH.mm.ss/g
-:tabe ../gatelog.js
-:tabe ga
-:tabe ../VERSION
-:tabe css/site.css
-:tabe js/site.js
-:tabe ionicons/css/ionicons.css
-:%s/form1/login_form/g
-:tabe 15dd9e86c0c02e9085d78fca107dc778.gif
-:tabe 30993b97b239949813699ad0e896d9aa.png
-:w tt.js
-:%s/ +/\n/g
-:%s/\s+/\n/g
-:%s/6379/6389/g
-:tabe Socket.js
-:tabe /root/gfresh/gfresh.js
-:set paset
+:q
 
 # Search String History (newest to oldest):
-?/owered
-?/ExecStart
-?/ie9
-?/sdsdf
-?/window
-?/catch
-?/useOri
-?/generalVotesClinton_mod
-?/general_resultsPercentageTrump_mod
-?/data_base.gene
-?/focus
-?/\.general
-?/random
-?/general_electoralVotes_mod
-?/#general_resultsPercentageClinton_val
-?/merge
-?/statusDi
-?/alert
-?/i
-?/bvnet
-?/progress
-?/democratic
-?/us2016
-?/Random
-?/percent_1
-?/\.clinton
-?/.clinton
-?/Hillary Cli
-?/H
-?/overall_percent_1
-?/percent
-?/80%
-?/70%
-?/$.get
-?/$get
-?/dataa
-?/\/data
-?/US Over
-?/provider
-?/ececec
-?/rgb(236, 236, 236)
-?/hover
-?/Use Ori
-?/UseOriginal
-?/mergeDa
-?/saveBtn
-?/console.log
-?/5001
-?/argv
-?/succ
-?/5000
-?/dfgdfg
-? \<states\>
-? \<parsePolitico\>
-?/data
-?/function dow
-?/sdfsdf
-?/total
-?/overallTit
-?/console.lo
-?/parsePoli
-?/states_has
-?/cnn
-?/reportingPer
-?/$(document).re
-?/document
-?/fs.wr
-?/states = 
-?/postfix
-?/mail
-?/vmail
-?/Warn
-?/ 80
-?/listen 80
-?/443
-?/80
-?/123
-?/proxy_auth
-?/auth
-?/parsePa
-?/processPa
-?/process
-?/parsePacket
-?/tcpdump
-?/forw
-?/Tab Panel
-?/wcFrame
-?/TabFrame
-?/Layout
-?/ncsa_users
-?/allow 
-?/initializeWe
-?/webserv
-?/createClient
-?/redis
-? \<sockjs\>
-?/config
-?/initializeState
-?/state
-?/dsfsdf
-?/init_rout
-?/photo_
-?/suphoto
-?/users
-?/suvi
-?/refres
-?/backgroun
-?/rt
-?/leftpaneCfg
-?/leftpanelCfg
-?/leftPanelCfg
-?/singleuser
-?/user
-?/resize
-?/columns
-?/inouttem
-?/background
-?/blank.png
-?/rtl
-?/add(
-?/photo
-?/rtlpho
-?/resizer
-?/url
-?/users_cache
-?/rtlo
-?/backgrou
-?/back
-?/summary
-?/log
-?/getSummary
-?/url:
-?/redbg
-?/access_user_form
-?/bind
-?/attac
-?/Unit_5
-?/sfsdf
-?/access_userlist
-?/data(
-?/SDfds
-?/params
-?/.data
-?/file
-?/sdfdsf
-?/img_upload
-?/send(
-?/upload
-?/req.sess
-?/"rs"
-?/onFileUploadError
-?/img
-?/bodyPa
-?/multer
-?/webix.ui
-?/pho
-?/au
-?/access_user
-?/show
-?/clearAll
-?/popup
-?/menu
-?/getInO
-?/periods
-?/index
-?/wu
-?/logged
-?/bulent
-?/png
-?/login
-?/webix
-?/configuration
-?/click
-?/configur
-?/conf
-?/*
-?/req.
-?/createCli
-?/stayT
-?/stay
-?/moment
-?/xlsx
-?/implode
-?/cur = ''
-?/cur
-?/setValue
-?/getValue
-?/dp_start
-?/period
-? 6380
-?/create
-?/pem
-? \<g\>
-? Mayis
-?/mp
-?/aa
-?/cache
-?/8088
-?/header_acc
-?/logfile
-?/overcommit
-?/62.
-?/nginx
-?/web_server
-?/ci_nginx
-?/nginx['enable']
-?/port
-?/rtmp
-?/full
-?/add-mo
-?/get_media_dur
-?/handle_add
-?/get_media_duration
-?/get_media_
-?/watcher
-?/chokidar
-?/started
-?/vidserv
-?/tree
-?//video
-?/DirWa
-?/sdfs
-?/initializeDir
-?/ff
-?/err
-? \$SERVER
-? IPADDR
-?/fancy
-?/dsfsd
-?/calc
-?/sadfsad
-?/insert
-?/mask
-?/typedef HAND
-?/bigtext
-?/marq
-?/WELCOME
-?/patch
-?/sdfsd
-?/log(
-?/incr
-? \<function\>
-? ^(.)e
-?/PSN
-?/_POS
-?/getPSN
-?/__asm__
-?/MS
-?/cpuid
-?/decr
-?/Module = NativeModul
-?/--version
-?/VERS
-?/searchbox
-?/push
-?/BETWEEN
-? \<navigateSectionPage\>
-?/keyword
-?/search
-?/cat
-?/delete
-?/asset
-?/updateAsset
-?/val
-? lb_
-? _lb
-?/loc
-?/asset_lb_img
-?/asset_lb
-?/opt
-?/galeri
-?/myFor
-?/s
-?/asd
-?/files
-?/btn_up
-?/sadf
-?/btn_
-?/order
-?/orderlist
-?/save
-?/Kaydet
-?/change
-?/pages
-?/i/
-?/style
-?/admin\/fromu
-?/fromuser
-?/#mi
-?/td_mas
-?/bulten
-?/emin
-?/update
-?/massm
-?/save_mas
-?/massma
-?/input
-?/blur
-?/blogcomment_count
-?/menu_pointer
-?/intro
-?/checked
-?/pf_comment
-?/error
-?/e
-?/hide_er
-?/x_icon
-?/check
-?/show_err
-?/check_blog
-?/errn
-?/logo
-?/.bmi
-?/about
-?/content").s
-?/menu_po
-?/fade
-?/.content"
-?/table-row
-?/table
-?/content
-?/table_row
-?/overlay
-? \<e\>
-?/validate
-?/send_co
-?/send_contact
-?/validateEm
-?/"change"
-?/checkV
-?/build
-?/eksiklikler
-?/invalid
-?/buildW
-?/valida
-?/selec
-?/select
-?/skip_in
-?/mass
-?/issueE
-?/massmail
-?/subscri
-?/send_mass
-?/issue
-?/terms
-?/blog_right
-?/rm_
-?/rm_link
-?/a:hover
-?/bf_write_link
-?/announce_time
-?/rm_twi
-?/skip
-?/{
-?/yorum
-?/yotum
-?/email
-?/INSERT INTO blogc
-?/INSERT INTO
-?/INSERT INTO blog_c
-?/INSERT INTO blogco
-?/function navigate(
-?/demo
-?/dsf
-? _demo
-?/:_demo/\"+__dummyflag__+\"/g
-?/_demo/\"+__dummyflag__+\"/g
-?/fromusers_demo
-?/fromusers
-?/UPDATE
-?/INTO blogcomment
-?/_demo
-?/blogpost.
-?/blogpost\"
-?/FROM blogpost
-?/navigateBlog
-?/blog_comment
-?/comments
-?/blog_post
-?/blogcomment
-?/bf_entry_e
-?/announce_detail_ti
-?/detail
-?/announce_id
-?/annou
-?/handleAnnounceQuery
-?/announce
-?/\/ann
-?/admin\/blog
-?/toggle
-?/Aktif
-?/submenu_cont
-?/galleryAction
-?/gallery_vid
-?/video_bg
-?/mediaelementplayer
-?/gallery_vi
-?/gallery
-?/gallery-vid
-?/jwpl
-?/emedialements
-?/title
-?/desc
-?/entry
-?/"go"
-?/qp.limit
-?/pf_talk
-?/navigateSection
-?/navigateSec
-?/"cat"
-?/bilgilen
-?/pf_talk_blog
-?/ound_logo
-?/sound
-?/gizli
-?/blog_lo
-?/eposta
-?/function Make
-?/push_st
-?/function nav
-?/navigate
-?/kosullar
-?/Make
-?/footer_icon_on
-?/footer
-?/privacy
-?/fromusers\/delete
-?/_id
-?/save_from
-?/admin\/blog\/sa
-?/fromusers_id<F8>
-?/admin\/fromusers
-? \<_id\>
-?/updateBlog
-?/UpdateBlog
-?/UpdateBlogPage
-?/admin/blog
-?/addfr
-?/addblog
-?/hmm
-?/intro_dis
-?/slider_bg
-?/intro_dispo
-?/shadÄ±w
-?/privacy\/sa
-? privacy
-?/priva
-?/blog\/save
-?/status
-?/logo_li
-?/menu_poi
-?/unknown
-?/invalid1
-?/is invalid
-?/kullan
-?/kullanim
-?/sdf
-?/box-sizing
-?/sup_4gt
-?/ejs
-?/soon
-?/  };
-?/       return res.send("User-agent: *");
-?/   if(req.params.section == "robots.txt") {
-?/handleEntr
-?/Scanner
-?/%
-?/escape
-?/safd
-?/function na
-?/navigator
-?/disp
-?/static
-?/dynamic
-?/header = tr
-?/renderNo
-?/bmi_ana
-?/manu_pointer
-? biorezonans
-?/biorezonans
-?/biorezonand
-?/as
-?/video
-?/.disp {
-?/EJS
-?/ready
-?/pf_saa
-?/&nbsp
-?/pf_cont_re
-?/pf_ls_wra
-?/renderN
-?/noJS
-?/cont
-?/bold_text
-?/font-wei
-?/function getAnn
-?/announce_list
-?/listitem
-?/announce_left
-?/pf_loca
-?/post_hea
-?/post_header
-?/save_blog
-?/blog
-?/archive_year
-?/year
-?/bold_te
-?/function navigateSec
-?/function navi
-?/handleBlogQuer
-?/blog_head_logo
-?/rm_cat
-?/rm_cats_title
-?/announce_detail
-?/announce_li
-?/bg
-?/backgr
-?/blog_conta
-?/rm_searchbox_wr
-?/blog_comment_se
-?/bf_write_link:hover
-?/bf_entry
-?/font-family
-?/smooth
-?/rm_search_ti
-?/blog_icon
-?/asdas
-?/rm_searchbox_btn
-?/box-shad
-?/blog_ri
-?/rm_adv
-?/rm_links_
-?/rm_cats_ti
-?/rm_archi
-? #38c
-?/rm_Facebook_li
-?/rm_arc
-?/rm_Archive_title
-?/dotted
-?/br_sep
-?/navigateBlo
-?/pageNo-1
-?/paging
-?/blogpost_id
-?/bl.find
-?/bl = 
-?/navigateBlogCom
-?/decora
-?/navigateFromUser
-?/cont_
-?/pf_cont
-?/check_blog_date
-?/write_commen
-?/handleBlog
-?/req.pageno
-?/handleBlogQu
-?/req.page
-?/handleBlogQuery
-?/navigateFrom
-?/decor
-?/navigateFro
-?/blogusers
-?/no data
-?/navigateP
-?/paging_div
-?/decoratePag
-?/deco
-?/blog_head
-?/bmi_bg
-?/blog_head_
-?/get_db_res
-?/ret
-?/ad
-?/ret.res.page
-? q_
-?/qc
-?/pagecount
-?/numbers
-?/blog_paging_ne
-?/rm_advs
-?/bur
-?/sound_
-?/nohover
-?/market
-?/pf_cont_reading:
-?/pf_comments
-?/weight
-?/blog_paging 
-?/blog_paging >
-?/blog_paging_
-?/blog_paging_n
-?/pf_co
-?/pf_comm
-?/thumb_title_head
-?/media
-?/med
-?/FROM blogco
-?/blogcomm
-?/gallery_fo
-?/gallery_foo
-?/pagin
-?/pag
-?/scroll_hider
-?/blog_foo
-?/pagi5gt
-?/write_fr
-?/write_co
-?/write_comment
-?/bc_su
-?/bf_submit
-?/bf_write
-?/galleryAc
-?/thumb_fr
-?/mi_basinda
-?/galleryActi
-? this
-?/active_th
-?/thumb_frame
-?/thumb
-?/submenu_
-?/slider_contr
-?/container
-?/submenu
-?/bmi_ana
-?/mi_bio
-?/animate_me
-?/pointer
-?/download_i
-?/infolink
-?/galleryA
-?/setTi
-?/galler
-?/gallerAc
-?/thumb_pl
-?/press_as
-?/press
-?/site.css
-?/lb_
-?/link
-?/replace
-?/attr('med
-?/attr("med
-?/mediaele
-?/contact_con
-?/play
-?/videojs
-?//
-?/st
-?/thumb_ti
-?/a:ho
-?/a {
-?/rm_links
-?/textcontent
-?/comment
-?/comment_form
-? ccc
-? eee
-?/subject
-? option
-?/body
-?/bazÄ±
-?/bas
-?/.mt
-?/sel
-?/helve
-? span
-?/disc
-?/copy_ma
-?/readon
-?/post_header_wr
-?/pf_date
-?/post_ti
-?/bloglist_wrapper
-?/post_titl
-?/post_body
-?/post_tit
-?/pushst
-?/params.re
-??=
-?/render
-?/blogco
-?/onpop
-?/onstate
-?/span
-?/round
-?/INSERT INTO blo
-?/o.res.page.da
-?/function navigateS
-?/|| 0
-?/function navigate
-?/"blogpost"
-?/navigateSectionPage
-?/calling na
-?/confirm
-?/DESC
-?/div{
-?/div {
-?/biore
-?/.footer
-?/biorez
+?/blank
+? \<GetNonCommentLine\>
+?/let
+?/300
+?/3000
+?/listen
 
 # Expression History (newest to oldest):
 
@@ -1200,1421 +40,451 @@ $
 
 # Registers:
 "0	LINE	0
-		password: { type: Types.Password, initial: true, required: true },
-"1	LINE	0
-			block footer
-				.auth-footer
-					| Powered by 
-					a(href='http://keystonejs.com', target='_blank', title='The Node.js CMS and web application platform (new window)') KeystoneJS
-			
+	        keyframeInterval: 2000,
+""1	LINE	0
+	s
 "2	LINE	0
-	    "keystone": "^0.3.19"
+	
 "3	LINE	0
 	
+	function! IndentIgnoringBlanks(child)
+	  let lnum = v:lnum
+	  while v:lnum > 1 && getline(v:lnum-1) == ""
+	    normal k
+	    let v:lnum = v:lnum - 1
+	  endwhile
+	  if a:child == ""
+	    if ! &l:autoindent
+	      return 0
+	    elseif &l:cindent
+	      return cindent(v:lnum)
+	    endif
+	  else
+	    exec "let indent=".a:child
+	    if indent != -1
+	      return indent
+	    endif
+	  endif
+	  if v:lnum == lnum && lnum != 1
+	    return -1
+	  endif
+	  let next = nextnonblank(lnum)
+	  if next == lnum
+	    return -1
+	  endif
+	  if next != 0 && next-lnum <= lnum-v:lnum
+	    return indent(next)
+	  else
+	    return indent(v:lnum-1)
+	  endif
+	endfunction
+	command! -bar IndentIgnoringBlanks
+	            \ if match(&l:indentexpr,'IndentIgnoringBlanks') == -1 |
+	            \   if &l:indentexpr == '' |
+	            \     let b:blanks_indentkeys = &l:indentkeys |
+	            \     if &l:cindent |
+	            \       let &l:indentkeys = &l:cinkeys |
+	            \     else |
+	            \       setlocal indentkeys=!^F,o,O |
+	            \     endif |
+	            \   endif |
+	            \   let b:blanks_indentexpr = &l:indentexpr |
+	            \   let &l:indentexpr = "IndentIgnoringBlanks('".
+	            \   substitute(&l:indentexpr,"'","''","g")."')" |
+	            \ endif
+	command! -bar IndentNormally
+	            \ if exists('b:blanks_indentexpr') |
+	            \   let &l:indentexpr = b:blanks_indentexpr |
+	            \ endif |
 "4	LINE	0
-				//- You don't _have_ to include a link saying your site is powered by KeystoneJS, but we appreciate it!
-				p Powered by <a href="http://keystonejs.com" target="_blank">KeystoneJS</a>.
-	
+	let ind = indent(prevnonblank(v:lnum - 1))
 "5	LINE	0
-				//- You don't _have_ to include a link saying your site is powered by KeystoneJS, but we appreciate it!
-				p Powered by <a href="http://keystonejs.com" target="_blank">KeystoneJS</a>.
-	
-	
+	let ind = indent(prevnonblank(v:lnum - 
 "6	LINE	0
-	[Unit]
-	Description=High-performance, schema-free document-oriented database
-	After=network.target
-	Documentation=https://docs.mongodb.org/manual
-	
-	[Service]
-	User=mongodb
-	Group=mongodb
-	ExecStart=/usr/bin/mongod --quiet --config /etc/mongod.conf
-	# file size
-	LimitFSIZE=infinity
-	# cpu time
-	LimitCPU=infinity
-	# virtual memory size
-	LimitAS=infinity
-	# open files
-	LimitNOFILE=64000
-	# processes/threads
-	LimitNPROC=64000
-	# total threads (user+kernel)
-	TasksMax=infinity
-	TasksAccounting=false
-	
-	# Recommended limits for for mongod as specified in
-	# http://docs.mongodb.org/manual/reference/ulimit/#recommended-settings
-	
-	[Install]
-	WantedBy=multi-user.target
+	        maxDurationHours: 6,
 "7	LINE	0
-	      console.log(l);
+	        crf: 31,
+	        fps: 25,
 "8	LINE	0
-	      console.log("test");
+	        formatCode: 96,
+	        fps: 30
 "9	LINE	0
-	          console.log(l);
-"a	CHAR	0
-	pti	
-"q@	CHAR	0
-	$€kl€klx€kl€kl€kl€kl€kl€klp€kh€kd
-"s	CHAR	0
-	Vyp
+	    {
+	      "id": 2,
+	      "title": "FACEBOOK",
+	      "inip": "TEMPOPO",
+	      "inport": "DUO3",
+	      "outputprofile": "facebook",
+	      "destination": "rtmp://live-api-s.facebook.com:80/rtmp/2013730242276755?ds=1&s_vt=api-s&a=ATgki7UgFeSuIBFt",
+	      "running": false,
+	      "startTime": 0,
+	      "currentFrames": 2381,
+	      "lastFrameChangeTime": 1530287357151
+	    },
+	    {
+	      "id": 3,
+	      "title": "TWITTER",
+	      "inip": "TEMPOPO",
+	      "inport": "DUO1",
+	      "outputprofile": "twitter",
+	      "destination": "rtmp://de.pscp.tv:80/x/4ig8dd4c3x8c",
+	      "running": false,
+	      "startTime": 0,
+	      "currentFrames": 3960,
+	      "lastFrameChangeTime": 1530350750390
+	    }
+"c	CHAR	0
+	€kh/var:nohcwconst
+"f	CHAR	0
+	€kh/function:nohdw/):noha =>
+"l	CHAR	0
+	€kh/var:nohcwlet
 "t	CHAR	0
-	estu
-""-	CHAR	0
-	password
+	€kh/self:nohcwthis
+"-	CHAR	0
+	ts
 
 # File marks:
-'0  21  2  ~/my-site/templates/views/index.jade
-'1  26  23  ~/my-site/keystone.js
-'2  14  0  ~/my-site/keystone.js
-'3  1  0  ~/my-site/node_modules/keystone/templates/includes/auth-brand.jade
-'4  21  0  ~/my-site/node_modules/keystone/templates/layout/auth.jade
-'5  77  7  ~/my-site/node_modules/keystone/templates/layout/base.jade
-'6  53  1  ~/my-site/routes/middleware.js
-'7  41  0  ~/my-site/routes/index.js
-'8  1  0  ~/my-site/routes/views/index.js
-'9  11  23  ~/my-site/package.json
+'0  1  0  ~/bvscripts/.git/MERGE_MSG
+'1  1  0  ~/bvscripts/.git/COMMIT_EDITMSG
+'2  883  0  ~/.vim/indent/javascript.vim
+'3  139  0  ~/i3lp/Channel.js
+'4  475  15  ~/.vim/indent/javascript.vim
+'5  1  0  ~/i3lp/Channel.js
+'6  22  0  ~/i3lp/Channel.js
+'7  20  0  ~/i3lp/Channel.js
+'8  25  0  ~/i3lp/Channel.js
+'9  23  6  ~/i3lp/Channel.js
 
 # Jumplist (newest first):
--'  21  2  ~/my-site/templates/views/index.jade
--'  1  0  ~/my-site/templates/views/index.jade
--'  26  23  ~/my-site/keystone.js
--'  27  0  ~/my-site/keystone.js
--'  1  0  ~/my-site/keystone.js
--'  14  0  ~/my-site/keystone.js
--'  1  0  ~/my-site/node_modules/keystone/templates/includes/auth-brand.jade
--'  21  0  ~/my-site/node_modules/keystone/templates/layout/auth.jade
--'  26  2  ~/my-site/node_modules/keystone/templates/layout/auth.jade
--'  1  0  ~/my-site/node_modules/keystone/templates/layout/auth.jade
--'  77  7  ~/my-site/node_modules/keystone/templates/layout/base.jade
--'  1  0  ~/my-site/node_modules/keystone/templates/layout/base.jade
--'  53  1  ~/my-site/routes/middleware.js
--'  1  0  ~/my-site/routes/middleware.js
--'  41  0  ~/my-site/routes/index.js
--'  1  0  ~/my-site/routes/index.js
--'  1  0  ~/my-site/routes/views/index.js
--'  11  23  ~/my-site/package.json
--'  1  0  ~/my-site/package.json
--'  1  0  ~/my-site/models/User.js
--'  23  0  ~/my-site/templates/views/index.jade
--'  1  0  ~/my-site/templates/layouts/default.jade
--'  67  2  ~/my-site/templates/layouts/default.jade
--'  1  0  updates/0.0.1-admins.js
--'  9  35  ~/my-site/templates/layouts/default.jade
--'  1  0  ~/my-site/templates/layouts/defa
--'  1  0  ~/my-site/templates/layouts/defq
--'  22  0  ~/my-site/templates/views/index.jade
--'  25  3  ~/my-site/templates/mixins/flash-messages.jade
--'  1  0  ~/my-site/templates/mixins/flash-messages.jade
--'  88  6  ~/my-site/templates/layouts/default.jade
--'  87  63  ~/my-site/templates/layouts/default.jade
--'  90  0  ~/my-site/templates/layouts/default.jade
--'  91  2  ~/my-site/templates/layouts/default.jade
--'  85  2  ~/my-site/templates/layouts/default.jade
--'  35  0  ~/my-site/templates/layouts/default.jade
--'  2  31  ~/my-site/.env
--'  1  0  ~/my-site/.env
--'  12  96  ~/my-site/updates/0.0.1-admins.js
--'  1  0  ~/my-site/updates/0.0.1-admins.js
--'  45  0  ~/my-site/keystone.js
--'  43  0  ~/myproject/keystone.js
--'  1  0  ~/myproject/keystone.js
--'  1  0  ~/myproject/models/User.js
--'  44  0  ~/myproject/keystone.js
--'  1  0  ~/myproject/.env
--'  13  1  ~/myproject/update/0.0.1-admin.js
--'  1  0  ~/myproject/update/0.0.1-admin.js
--'  25  20  templates/mixins/flash-messages.jade
--'  1  0  templates/mixins/flash-messages.jade
--'  31  11  templates/layouts/base.jade
--'  1  0  templates/layouts/base.jade
--'  4  17  ~/myproject/templates/views/index.jade
--'  1  0  ~/myproject/templates/views/index.jade
--'  9  0  ~/myproject/views/index.js
--'  1  0  ~/myproject/views/index.js
--'  60  1  ~/myproject/routes/middleware.js
--'  1  0  ~/myproject/routes/middleware.js
--'  35  0  ~/myproject/routes/index.js
--'  1  0  ~/myproject/routes/index.js
--'  1  0  ~/myproject/models/users.js
--'  13  15  ~/myproject/models/users.js
--'  1  21  ~/myproject/models.index.js
--'  27  16  ~/myproject/web.js
--'  1  0  ~/myproject/web.js
--'  16  0  ~/myproject/package.json
--'  1  0  ~/myproject/package.json
--'  2  0  ~/myproject/keystone.js
--'  15  0  ~/myproject/models/User.js
--'  9  3  /lib/systemd/system/mongod.service
--'  1  0  /lib/systemd/system/mongod.service
--'  2  0  /lib/systemd/system/mongod.service
--'  13  0  /lib/systemd/system/mongod.service
--'  14  0  /lib/systemd/system/mongod.service
--'  25  25  /lib/systemd/system/mongod.service
--'  2  396  /root/.ssh/authorized_keys
--'  1  0  /root/.ssh/authorized_keys
--'  1  396  /root/ssh/authorized_keys
--'  1299  82  ~/wcsstore/ConsumerDirectStorefrontAssetStore/test.js
--'  1527  1  ~/wcsstore/ConsumerDirectStorefrontAssetStore/test.js
--'  1  0  ~/wcsstore/ConsumerDirectStorefrontAssetStore/test.js
--'  1407  27  ~/wcsstore/ConsumerDirectStorefrontAssetStore/test.js
--'  565  4  ~/wcsstore/ConsumerDirectStorefrontAssetStore/test.js
--'  91  5  ~/wcsstore/ConsumerDirectStorefrontAssetStore/test.js
--'  90  23  ~/wcsstore/ConsumerDirectStorefrontAssetStore/test.js
--'  55  8  ~/wcsstore/ConsumerDirectStorefrontAssetStore/test.js
--'  17  17  ~/wcsstore/ConsumerDirectStorefrontAssetStore/test.js
--'  23  26  ~/wcsstore/ConsumerDirectStorefrontAssetStore/test.js
--'  1747  0  ~/wcsstore/ConsumerDirectStorefrontAssetStore/test.js
--'  1  0  /etc/nginx/sites-available/bvnet.net
--'  1  0  /etc/nginx/sites-available/default
--'  154  12  /home/bvnet/public_html/us2016/public/modify.html
--'  249  10  /home/bvnet/public_html/us2016/public/modify.html
--'  222  48  /home/bvnet/public_html/us2016/public/modify.html
--'  221  42  /home/bvnet/public_html/us2016/public/modify.html
--'  160  37  /home/bvnet/public_html/us2016/public/modify.html
--'  92  40  /home/bvnet/public_html/us2016/public/modify.html
--'  172  37  /home/bvnet/public_html/us2016/public/modify.html
--'  136  12  /home/bvnet/public_html/us2016/public/modify.html
+-'  1  0  ~/bvscripts/.git/MERGE_MSG
+-'  1  0  ~/bvscripts/.git/COMMIT_EDITMSG
+-'  883  0  ~/.vim/indent/javascript.vim
+-'  1  0  ~/.vim/indent/javascript.vim
+-'  43  0  ~/.vim/indent/javascript.vim
+-'  139  0  ~/i3lp/Channel.js
+-'  41  0  ~/i3lp/Channel.js
+-'  1  0  ~/i3lp/Channel.js
+-'  2  0  ~/i3lp/Channel.js
+-'  475  15  ~/.vim/indent/javascript.vim
+-'  477  0  ~/.vim/indent/javascript.vim
+-'  543  19  ~/.vim/indent/javascript.vim
+-'  714  14  ~/.vim/indent/javascript.vim
+-'  542  20  ~/.vim/indent/javascript.vim
+-'  22  0  ~/i3lp/Channel.js
+-'  20  0  ~/i3lp/Channel.js
+-'  23  0  ~/i3lp/Channel.js
+-'  25  0  ~/i3lp/Channel.js
+-'  24  0  ~/i3lp/Channel.js
+-'  12  0  ~/i3lp/Channel.js
+-'  255  90  ~/i3lp/Channel.js
+-'  253  0  ~/i3lp/Channel.js
+-'  35  19  ~/i3lp/config/recorder.config.test4.json5
+-'  35  19  ~/i3lp/config/recorder.config.test3.json5
+-'  35  19  ~/i3lp/config/recorder.config.test2.json5
+-'  35  19  ~/i3lp/config/recorder.config.test1.json5
+-'  1  0  ~/i3lp/config/recorder.config.test1.json5
+-'  62  10  ~/i3lp/Channel.js
+-'  369  48  ~/i3stream/main.js
+-'  1  0  ~/i3stream/main.js
+-'  42  0  ~/i3lp/config/recorder.config.test1.json5
+-'  114  5  ~/i3lp/server.js
+-'  1  0  ~/i3lp/server.js
+-'  9  27  ~/i3lp/config/recorder.config.test4.json5
+-'  1  0  ~/i3lp/config/recorder.config.test4.json5
+-'  9  27  ~/i3lp/config/recorder.config.test3.json5
+-'  1  0  ~/i3lp/config/recorder.config.test3.json5
+-'  9  27  ~/i3lp/config/recorder.config.test2.json5
+-'  1  0  ~/i3lp/config/recorder.config.test2.json5
+-'  23  0  ~/i3lp/config/recorder.config.syriatv.json5
+-'  38  26  ~/i3lp/config/recorder.config.test1.json5
+-'  74  18  ~/router-panel/lib/ClientInterface.js
+-'  1  0  ~/router-panel/lib/ClientInterface.js
+-'  55  8  ~/router-panel/server.js
+-'  1  0  ~/router-panel/server.js
+-'  1  0  ~/router-panel/config/panels-config.json5
+-'  1  0  ~/router-panel/config/router-panel.json5
+-'  518  0  /usr/lib/bmd/Examples/StatusMonitor.cpp
+-'  1  1  /usr/lib/bmd/Examples/StatusMonitor.cpp
+-'  122  18  ~/video-mon/server.js
+-'  1  0  ~/video-mon/server.js
+-'  1  14  /etc/tmux.conf
+-'  38  0  ~/i3stream/config/local.json5
+-'  1  0  ~/i3stream/config/local.json5
+-'  1  3  /etc/hostname
+-'  3  0  /etc/hosts
+-'  1  0  /etc/hosts
+-'  52  0  ~/i3stream/data.json
+-'  14  4  ~/i3stream/data.json
+-'  1  0  ~/i3stream/data.json
+-'  13  31  /etc/network/interfaces
+-'  1  0  /etc/network/interfaces
+-'  13  31  /etc/network/interfaces
+-'  1  0  /etc/network/interfaces
+-'  52  0  ~/i3stream/data.json
+-'  14  4  ~/i3stream/data.json
+-'  1  0  ~/i3stream/data.json
+-'  13  31  /etc/network/interfaces
+-'  1  0  /etc/network/interfaces
+-'  13  31  /etc/network/interfaces
+-'  1  0  /etc/network/interfaces
+-'  3  0  /etc/hosts
+-'  1  0  /etc/hosts
+-'  52  0  ~/i3stream/data.json
+-'  14  4  ~/i3stream/data.json
+-'  1  0  ~/i3stream/data.json
+-'  13  31  /etc/network/interfaces
+-'  1  0  /etc/network/interfaces
+-'  13  31  /etc/network/interfaces
+-'  1  0  /etc/network/interfaces
+-'  52  0  ~/i3stream/data.json
+-'  14  4  ~/i3stream/data.json
+-'  1  0  ~/i3stream/data.json
+-'  13  31  /etc/network/interfaces
+-'  1  0  /etc/network/interfaces
+-'  13  31  /etc/network/interfaces
+-'  1  0  /etc/network/interfaces
+-'  1  3  /etc/hostname
+-'  3  0  /etc/hosts
+-'  1  0  /etc/hosts
+-'  52  0  ~/i3stream/data.json
+-'  14  4  ~/i3stream/data.json
+-'  1  0  ~/i3stream/data.json
+-'  13  31  /etc/network/interfaces
+-'  1  0  /etc/network/interfaces
+-'  13  31  /etc/network/interfaces
+-'  1  0  /etc/network/interfaces
+-'  52  0  ~/i3stream/data.json
+-'  14  4  ~/i3stream/data.json
 
 # History of marks within files (newest to oldest):
 
-> ~/my-site/templates/views/index.jade
-	"	21	2
-
-> ~/my-site/keystone.js
-	"	26	23
-	.	27	0
-	+	26	23
-	+	27	0
-
-> ~/my-site/templates/layouts/default.jade
+> ~/bvscripts/.git/MERGE_MSG
 	"	1	0
-	^	9	36
-	.	9	35
-	+	91	0
-	+	87	0
-	+	9	35
 
-> ~/my-site/models/User.js
-	"	21	1
-	^	14	26
-	.	14	25
+> ~/bvscripts/.git/COMMIT_EDITMSG
+	"	1	0
+
+> ~/.vim/indent/javascript.vim
+	"	883	0
+	.	1	0
+	+	478	0
+	+	1	17
+	+	475	7
+	+	1	0
+
+> ~/i3lp/Channel.js
+	"	139	0
+	^	139	0
+	.	139	0
+	+	253	0
+	+	255	86
+	+	12	0
+	+	20	0
+	+	20	0
+	+	20	0
+	+	23	0
+	+	24	0
+	+	23	0
+	+	25	0
+	+	20	0
+	+	23	0
 	+	19	0
 	+	21	0
-	+	14	25
-
-> ~/my-site/node_modules/keystone/templates/includes/auth-brand.jade
-	"	1	0
-
-> ~/my-site/node_modules/keystone/templates/layout/auth.jade
-	"	21	0
-	.	21	0
-	+	21	0
-
-> ~/my-site/node_modules/keystone/templates/layout/base.jade
-	"	77	7
-
-> ~/my-site/routes/middleware.js
-	"	53	1
-
-> ~/my-site/routes/index.js
-	"	41	0
-
-> ~/my-site/routes/views/index.js
-	"	1	0
-
-> ~/my-site/package.json
-	"	11	23
-	^	14	24
-	.	11	23
-	+	12	20
-	+	11	0
-	+	9	22
-	+	12	0
-	+	11	23
-
-> updates/0.0.1-admins.js
-	"	1	0
-
-> ~/my-site/templates/layouts/defa
-	"	1	0
-
-> ~/my-site/templates/layouts/defq
-	"	1	0
-
-> ~/my-site/templates/mixins/flash-messages.jade
-	"	25	3
-
-> ~/my-site/.env
-	"	2	31
-	^	2	32
-	.	2	31
-	+	2	31
-
-> ~/my-site/updates/0.0.1-admins.js
-	"	12	96
-	^	12	97
-	.	12	96
-	+	12	96
-
-> ~/myproject/keystone.js
-	"	43	0
-
-> ~/myproject/models/User.js
-	"	1	0
-
-> ~/myproject/.env
-	"	1	0
-
-> ~/myproject/update/0.0.1-admin.js
-	"	13	1
-	^	13	2
-	.	13	0
-	+	13	0
-
-> templates/mixins/flash-messages.jade
-	"	25	20
-	^	25	21
-	.	25	0
-	+	25	0
-
-> templates/layouts/base.jade
-	"	31	11
-	^	31	12
-	.	31	9
-	+	31	9
-
-> ~/myproject/templates/views/index.jade
-	"	4	17
-	^	4	18
-	.	4	12
-	+	4	12
-
-> ~/myproject/views/index.js
-	"	9	0
-	^	9	1
-	.	9	0
-	+	9	0
-
-> ~/myproject/routes/middleware.js
-	"	60	1
-	^	60	2
-	.	60	0
-	+	60	0
-
-> ~/myproject/routes/index.js
-	"	35	0
-	^	35	1
-	.	35	0
+	+	22	0
 	+	35	0
+	+	39	0
+	+	41	0
+	+	127	0
+	+	125	0
+	+	134	0
+	+	132	0
+	+	130	0
+	+	135	0
+	+	140	0
+	+	139	0
 
-> ~/myproject/models/users.js
+> ~/.vimrc
 	"	1	0
-	^	13	16
-	.	13	13
-	+	13	13
+	^	172	0
+	.	172	0
+	+	705	36
+	+	705	0
+	+	705	0
+	+	705	0
+	+	642	0
+	+	642	0
+	+	642	0
+	+	648	0
+	+	167	0
+	+	164	0
+	+	645	0
+	+	172	0
 
-> ~/myproject/models.index.js
-	"	1	21
-	^	1	22
-	.	1	19
-	+	1	19
+> ~/i3lp/config/recorder.config.test1.json5
+	"	35	19
+	^	35	20
+	.	35	19
+	+	4	17
+	+	6	17
+	+	8	17
+	+	9	18
+	+	10	0
+	+	9	27
+	+	12	0
+	+	15	27
+	+	16	26
+	+	27	18
+	+	28	19
+	+	30	0
+	+	38	27
+	+	39	0
+	+	16	27
+	+	26	22
+	+	25	9
+	+	24	15
+	+	17	27
+	+	18	20
+	+	39	0
+	+	38	26
+	+	29	15
+	+	33	16
+	+	35	19
 
-> ~/myproject/web.js
-	"	27	16
-	^	27	17
-	.	27	14
-	+	27	14
+> ~/i3lp/config/recorder.config.test2.json5
+	"	35	19
+	^	35	20
+	.	35	19
+	+	4	17
+	+	6	17
+	+	9	27
+	+	35	19
 
-> ~/myproject/package.json
-	"	16	0
-	^	16	1
-	.	16	0
-	+	16	0
+> ~/i3lp/config/recorder.config.test3.json5
+	"	35	19
+	^	35	20
+	.	35	19
+	+	4	17
+	+	6	17
+	+	9	27
+	+	35	19
 
-> /lib/systemd/system/mongod.service
-	"	9	3
-	^	9	41
-	.	9	40
-	+	14	6
-	+	25	19
-	+	15	0
-	+	12	26
-	+	9	40
+> ~/i3lp/config/recorder.config.test4.json5
+	"	35	19
+	^	35	20
+	.	35	19
+	+	4	17
+	+	6	17
+	+	9	27
+	+	35	19
 
-> /root/.ssh/authorized_keys
-	"	2	396
-	^	2	397
-	.	2	385
-	+	2	385
+> ~/i3stream/main.js
+	"	369	48
+	^	369	49
+	.	368	49
+	+	368	49
 
-> /root/ssh/authorized_keys
-	"	1	396
-	^	1	397
-	.	1	385
-	+	1	385
-	+	1	385
+> ~/i3lp/server.js
+	"	114	5
+	^	114	6
+	.	114	5
+	+	114	5
 
-> ~/wcsstore/ConsumerDirectStorefrontAssetStore/test.js
-	"	1299	82
-	^	1299	83
-	.	1299	82
+> ~/i3lp/config/recorder.config.syriatv.json5
+	"	23	0
+
+> /etc/fstab
+	"	1	0
+	^	1	46
+	.	1	0
 	+	1	0
-	+	1747	0
-	+	1747	5
-	+	1	7
-	+	1	15
-	+	1	12
-	+	1	15
-	+	1	169
-	+	1	304
-	+	1747	0
-	+	1	0
-	+	1746	0
-	+	3	15
-	+	56	37
-	+	57	42
-	+	23	0
-	+	20	29
-	+	565	25
-	+	565	0
-	+	565	13
-	+	565	4
-	+	565	4
-	+	565	0
-	+	565	35
-	+	565	35
-	+	565	0
-	+	565	5
-	+	565	0
-	+	565	0
-	+	565	0
-	+	565	0
-	+	565	0
-	+	565	16
-	+	565	0
-	+	565	0
-	+	565	29
-	+	565	40
-	+	565	0
-	+	565	14
-	+	565	22
-	+	565	0
-	+	565	0
-	+	565	28
-	+	565	17
-	+	565	0
-	+	565	2
-	+	565	0
-	+	20	0
-	+	565	0
-	+	565	0
-	+	564	0
-	+	528	0
-	+	565	8
-	+	565	0
-	+	1744	0
-	+	1689	0
-	+	5	0
-	+	1481	0
-	+	576	0
-	+	586	0
-	+	1662	0
-	+	1247	0
-	+	1527	0
-	+	1527	0
-	+	1298	7
-	+	1299	0
-	+	1300	9
-	+	1299	82
+
+> ~/router-panel/lib/ClientInterface.js
+	"	74	18
+	.	74	18
+	+	74	18
+
+> ~/router-panel/server.js
+	"	55	8
+
+> ~/router-panel/config/panels-config.json5
+	"	1	0
+
+> ~/router-panel/config/router-panel.json5
+	"	1	0
+
+> /usr/lib/bmd/Examples/StatusMonitor.cpp
+	"	518	0
+	^	518	0
+	.	517	1
+	+	1	18
+	+	517	1
+
+> ~/video-mon/server.js
+	"	122	18
+	^	122	19
+	.	122	18
+	+	107	18
+	+	112	18
+	+	117	18
+	+	122	18
+
+> /etc/tmux.conf
+	"	1	14
+	^	1	15
+	.	1	14
+	+	1	14
+
+> ~/i3stream/config/local.json5
+	"	38	0
+
+> /etc/hostname
+	"	1	3
+	^	1	4
+	.	1	3
+	+	1	3
 
 > /etc/hosts
-	"	4	0
-
-> /etc/nginx/sites-available/bvnet.net
-	"	1	0
-	^	26	26
-	.	33	0
-	+	21	0
-	+	23	45
-	+	25	0
-	+	29	0
-	+	27	0
-	+	28	3
-	+	25	42
-	+	26	41
-	+	28	22
-	+	25	21
-	+	26	20
-	+	33	0
-
-> /etc/nginx/sites-available/default
-	"	1	0
-
-> /home/bvnet/public_html/us2016/dataserver.js
-	"	87	34
-	^	87	35
-	.	87	34
-	+	191	95
-	+	188	15
-	+	260	12
-	+	272	19
-	+	140	45
-	+	140	8
-	+	140	30
-	+	140	52
-	+	140	10
-	+	140	0
-	+	140	14
-	+	140	10
-	+	140	39
-	+	141	8
-	+	140	0
-	+	140	25
-	+	140	0
-	+	140	33
-	+	140	25
-	+	140	8
-	+	140	0
-	+	188	4
-	+	260	12
-	+	272	15
-	+	217	0
-	+	165	0
-	+	65	18
-	+	69	27
-	+	72	89
-	+	100	2
-	+	70	2
-	+	63	2
-	+	100	0
-	+	89	34
-	+	96	2
-	+	96	16
-	+	90	35
-	+	96	0
-	+	90	39
-	+	95	4
-	+	95	0
-	+	91	77
-	+	92	71
-	+	93	65
-	+	90	22
-	+	96	0
-	+	93	39
-	+	92	47
-	+	91	49
-	+	90	0
-	+	91	0
-	+	96	0
-	+	95	0
-	+	91	0
-	+	96	0
-	+	98	61
-	+	30	38
-	+	49	0
-	+	44	54
-	+	72	74
-	+	99	16
-	+	90	26
-	+	91	23
-	+	92	24
-	+	93	25
-	+	92	23
-	+	96	0
-	+	94	0
-	+	155	39
-	+	156	19
-	+	217	2
-	+	217	72
-	+	217	69
-	+	217	48
-	+	217	45
-	+	217	0
-	+	210	0
-	+	201	26
-	+	209	2
-	+	202	5
-	+	202	0
-	+	73	25
-	+	88	8
-	+	97	2
-	+	89	0
-	+	83	25
-	+	72	82
-	+	84	24
-	+	88	0
-	+	83	0
-	+	73	15
-	+	74	28
-	+	74	0
-	+	75	0
-	+	82	0
-	+	85	26
-	+	86	27
-	+	85	72
-	+	86	71
-	+	87	34
-
-> /home/bvnet/public_html/us2016/public/us2016.html
-	"	1	0
-	^	361	29
-	.	361	28
-	+	281	27
-	+	317	63
-	+	323	0
-	+	318	0
-	+	329	0
-	+	324	22
-	+	325	0
-	+	326	0
-	+	330	49
-	+	288	0
-	+	285	45
-	+	286	44
-	+	288	0
-	+	287	35
-	+	290	0
-	+	288	88
-	+	289	84
-	+	54	40
-	+	55	0
-	+	291	68
-	+	293	0
-	+	292	81
-	+	294	0
-	+	293	24
-	+	298	0
-	+	296	20
-	+	299	0
-	+	297	68
-	+	295	78
-	+	294	44
-	+	291	43
-	+	294	43
-	+	367	28
-	+	361	28
-	+	367	28
-	+	361	28
-
-> /home/bvnet/public_html/us2016/data.json
-	"	1	0
-	^	412	1
-	.	412	0
-	+	1	1
-	+	412	0
-
-> /home/bvnet/public_html/us2016/data_base.json
-	"	1	31
-	^	9	30
-	.	8	31
-	+	8	32
-	+	9	30
-	+	8	31
-	+	9	29
-	+	8	32
-	+	16	32
-	+	17	29
-	+	24	31
-	+	25	29
-	+	32	31
-	+	33	29
-	+	32	31
-	+	25	29
-	+	24	31
-	+	17	29
-	+	16	31
-	+	9	29
-	+	8	31
-	+	5	26
-	+	16	31
-	+	8	31
-	+	8	31
-	+	9	29
-	+	8	36
-	+	8	31
-	+	9	29
-	+	8	31
-	+	9	29
-	+	8	31
-
-> /home/bvnet/public_html/us2016/public/Us_election2016.html
-	"	399	20
-	^	399	53
-	.	399	52
-	+	399	52
-
-> /home/bvnet/public_html/us2016/cnndata.js
-	"	21	0
-	.	21	0
-	+	1	53
-	+	22	0
-	+	22	0
-	+	4	0
-	+	21	37
-	+	21	2
-	+	21	2
-	+	1	0
-	+	3	0
-	+	21	19
-	+	1	24
-	+	21	0
-	+	21	32
-	+	21	0
-	+	21	0
-	+	21	33
-	+	21	3
-	+	21	31
-	+	21	0
-	+	21	0
-	+	21	71
-	+	21	0
-	+	21	0
-	+	2	22
-	+	21	3
-	+	21	46
-	+	21	45
-	+	21	24
-	+	21	18
-	+	21	21
-	+	21	27
-	+	21	0
-	+	21	15
-	+	21	25
-	+	21	4
-	+	21	17
-	+	21	14
-	+	21	21
-	+	21	8
-	+	21	12
-	+	21	0
-	+	21	36
-	+	21	38
-	+	21	6
-	+	21	44
-	+	21	56
-	+	21	8
-	+	21	0
-	+	21	0
-	+	21	66
-	+	21	49
-	+	21	41
-	+	21	26
-	+	21	21
-	+	21	7
-	+	21	45
-	+	21	43
-	+	21	0
-	+	21	18
-	+	21	28
-	+	21	23
-	+	21	28
-	+	21	35
-	+	21	0
-	+	21	29
-	+	21	22
-	+	21	0
-	+	21	0
-	+	21	28
-	+	21	24
-	+	21	29
-	+	21	78
-	+	21	76
-	+	21	56
-	+	21	51
-	+	21	10
-	+	21	0
-	+	21	50
-	+	21	43
-	+	21	53
-	+	21	52
-	+	21	22
-	+	21	0
-	+	21	0
-	+	21	14
-	+	21	14
-	+	21	21
-	+	21	0
-	+	22	31
-	+	22	2
-	+	22	41
-	+	22	2
-	+	22	0
-	+	4	0
-	+	21	0
-
-> /home/bvnet/public_html/us2016/web/states_hash.json
-	"	1	0
-
-> /home/bvnet/public_html/us2016/ds2.js
-	"	1	0
-	^	96	43
-	.	50	14
-	+	99	0
-	+	84	18
-	+	50	14
-	+	147	39
-	+	201	43
-	+	107	0
-	+	106	65
-	+	105	25
-	+	83	35
-	+	86	32
-	+	96	42
-	+	50	14
-
-> /home/bvnet/public_html/us2016/web/modify.html
-	"	1	0
-	^	1	0
-
-> /home/bvnet/public_html/us2016/public/modify.html
-	"	181	0
-	.	154	0
-	+	31	15
-	+	33	0
-	+	52	31
-	+	177	0
-	+	183	0
-	+	56	0
-	+	56	24
-	+	56	24
-	+	56	53
-	+	56	51
-	+	56	42
-	+	56	87
-	+	56	86
-	+	56	87
-	+	56	78
-	+	56	0
-	+	56	0
-	+	56	60
-	+	56	58
-	+	56	48
-	+	56	42
-	+	56	53
-	+	56	51
-	+	56	41
-	+	56	39
-	+	56	39
-	+	56	84
-	+	56	82
-	+	56	70
-	+	56	68
-	+	116	0
-	+	116	0
-	+	116	33
-	+	116	33
-	+	116	44
-	+	116	42
-	+	116	43
-	+	116	42
-	+	116	43
-	+	116	42
-	+	116	43
-	+	116	44
-	+	116	102
-	+	116	0
-	+	54	31
-	+	56	0
-	+	219	133
-	+	80	20
-	+	87	19
-	+	80	0
-	+	81	30
-	+	82	30
-	+	83	31
-	+	85	29
-	+	86	29
-	+	94	0
-	+	80	0
-	+	148	0
-	+	144	0
-	+	133	0
-	+	132	0
-	+	160	0
-	+	158	55
-	+	159	56
-	+	160	54
-	+	161	54
-	+	178	0
-	+	180	0
-	+	178	26
-	+	179	0
-	+	25	15
-	+	83	38
-	+	84	40
-	+	220	35
-	+	225	0
-	+	224	11
-	+	223	141
-	+	224	0
-	+	221	0
-	+	223	0
-	+	221	12
-	+	223	12
-	+	221	59
-	+	222	58
-	+	223	0
-	+	221	13
-	+	222	13
-	+	221	49
-	+	222	47
-	+	221	50
-	+	222	48
-	+	246	33
-	+	250	0
-	+	247	0
-	+	249	0
-	+	247	50
-	+	249	0
-	+	248	37
-	+	153	35
-	+	154	0
-
-> /home/bvnet/public_html/us2016/public/us2016_2.html
-	"	314	22
-	^	169	48
-	.	314	0
-	+	130	17
-	+	131	19
-	+	133	15
-	+	140	0
-	+	137	21
-	+	137	32
-	+	137	20
-	+	139	25
-	+	139	0
-	+	137	20
-	+	138	28
-	+	133	0
-	+	140	20
-	+	138	27
-	+	127	0
-	+	125	8
-	+	126	28
-	+	182	38
-	+	127	0
-	+	133	26
-	+	133	28
-	+	133	0
-	+	133	0
-	+	127	26
-	+	163	49
-	+	138	27
-	+	140	0
-	+	137	19
-	+	138	27
-	+	137	0
-	+	132	34
-	+	346	32
-	+	164	57
-	+	182	39
-	+	164	58
-	+	170	66
-	+	171	88
-	+	172	79
-	+	173	0
-	+	175	63
-	+	127	0
-	+	136	17
-	+	367	54
-	+	373	0
-	+	369	22
-	+	373	0
-	+	368	68
-	+	370	0
-	+	373	0
-	+	370	43
-	+	371	65
-	+	367	39
-	+	370	46
-	+	305	69
-	+	306	80
-	+	315	66
-	+	316	80
-	+	307	0
-	+	312	0
-	+	309	55
-	+	317	0
-	+	322	0
-	+	319	61
-	+	300	35
-	+	34	23
-	+	491	0
-	+	484	0
-	+	486	82
-	+	487	0
-	+	489	80
-	+	490	0
-	+	485	43
-	+	488	43
-	+	346	0
-	+	159	50
-	+	158	58
-	+	169	42
-	+	155	37
-	+	158	52
-	+	169	46
-	+	99	0
-	+	99	8
-	+	99	97
-	+	99	21
-	+	99	114
-	+	99	47
-	+	89	29
-	+	99	0
-	+	98	0
-	+	91	8
-	+	92	8
-	+	100	18
-	+	101	35
-	+	169	47
-	+	169	0
-	+	304	0
-	+	314	0
-	+	300	35
-	+	305	0
-	+	314	0
-
-> /home/bvnet/public_html/us2016/public/us2016_3.html
-	"	157	15
-	^	157	33
-	.	157	0
-	+	145	0
-	+	145	11
-	+	145	0
-	+	145	0
-	+	145	16
-	+	145	0
-	+	150	0
-	+	151	22
-	+	155	23
-	+	152	33
-	+	158	0
-	+	156	24
-	+	143	28
-	+	152	38
-	+	156	31
-	+	151	23
-	+	151	0
-	+	153	29
-	+	157	0
-
-> /home/bvnet/public_html/us2016/public/Us_election2016_2.html
-	"	399	82
-	^	399	83
-	.	399	82
-	+	399	82
-
-> /home/bvnet/public_html/us2016/public/modify2.html
-	"	66	0
-	^	84	50
-	.	84	49
-	+	54	31
-	+	62	0
-	+	55	30
-	+	61	41
-	+	56	16
-	+	57	16
-	+	58	16
-	+	61	0
-	+	59	16
-	+	65	26
-	+	66	0
-	+	80	53
-	+	81	51
-	+	82	41
-	+	83	39
-	+	60	34
-	+	71	0
-	+	70	31
-	+	78	92
-	+	79	0
-	+	84	49
-
-> /etc/nginx/sites-enabled/us2016.kurdistan24.tv
-	"	18	29
-	^	18	30
-	.	18	29
-	+	1	25
-	+	1	0
-	+	1	23
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	20
-	+	1	18
-	+	1	21
-	+	22	1
-	+	18	29
-
-> ~/wcsstore/ConsumerDirectStorefrontAssetStore/javascript_new_ui/updatedscript.js
-	"	2695	16
-	^	2716	20
-	.	2716	19
-	+	2716	19
-
-> ~/wcsstore/ConsumerDirectStorefrontAssetStore/javascript_new_ui/dl
-	"	1	0
-
-> ~/dl
-	"	17	0
-	.	16	98
-	+	1	54
-	+	1	4
-	+	1	0
-	+	1	16
-	+	1	1
-	+	1	0
-	+	1	0
-	+	1	6
-	+	1	15
-	+	1	1
-	+	1	2
-	+	1	6
-	+	1	1
-	+	1	30
-	+	1	2
-	+	1	0
-	+	1	2
-	+	1	20
-	+	1	2
-	+	1	0
-	+	1	4
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	88
-	+	16	98
-
-> /home/bvnet/public_html/us2016/parse_politico.js
-	"	18	15
-	^	18	16
-	.	18	16
-	+	72	0
-	+	72	92
-	+	72	14
-	+	72	0
-	+	72	95
-	+	72	0
-	+	72	108
-	+	72	56
-	+	72	0
-	+	72	78
-	+	72	43
-	+	72	28
-	+	72	100
-	+	72	0
-	+	72	0
-	+	72	0
-	+	72	0
-	+	72	0
-	+	72	0
-	+	72	23
-	+	72	23
-	+	72	50
-	+	22	0
-	+	19	2
-	+	10	13
-	+	17	11
-	+	33	0
-	+	7	0
-	+	23	0
-	+	22	19
-	+	72	0
-	+	79	26
-	+	150	0
-	+	82	0
-	+	80	15
-	+	81	2
-	+	80	6
-	+	147	3
-	+	81	0
-	+	59	18
-	+	67	17
-	+	70	3
-	+	68	29
-	+	73	4
-	+	76	0
-	+	68	28
-	+	60	31
-	+	147	0
-	+	146	10
-	+	79	24
-	+	65	0
-	+	60	32
-	+	60	46
-	+	61	40
-	+	64	10
-	+	24	15
-	+	23	14
-	+	24	20
-	+	23	10
-	+	24	0
-	+	27	8
-	+	100	0
-	+	109	16
-	+	121	21
-	+	124	21
-	+	129	0
-	+	133	0
-	+	131	25
-	+	132	25
-	+	134	27
-	+	135	29
-	+	134	23
-	+	26	0
-	+	29	0
-	+	60	34
-	+	62	46
-	+	63	33
-	+	12	0
-	+	11	29
-	+	14	19
-	+	15	27
-	+	18	16
-
-> /tmp/crontab.OYeziQ/crontab
-	"	23	0
-	^	23	1
-	.	23	0
-	+	23	0
-
-> /tmp/crontab.SqzVkn/crontab
-	"	1	0
-
-> /tmp/crontab.yj6JJg/crontab
-	"	24	0
-	^	24	0
-	.	23	123
-	+	23	123
-
-> /tmp/crontab.lefpi2/crontab
-	"	22	0
-	.	23	0
-	+	2	0
-	+	1	0
-	+	23	0
-
-> /tmp/crontab.a9BHDt/crontab
-	"	23	122
-	^	23	123
-	.	23	118
-	+	23	118
-
-> /tmp/crontab.08d8ff/crontab
-	"	1	0
-
-> ~/.ssh/authorized_keys
-	"	3	397
-	^	3	398
-	.	3	394
-	+	1	0
-	+	1	16
-	+	1	7
-	+	1	375
-	+	1	383
-	+	1	249
-	+	1	249
-	+	1	467
-	+	1	469
-	+	1	469
-	+	1	0
-	+	1	469
-	+	1	469
-	+	1	7
-	+	1	734
-	+	1	722
-	+	1	7
-	+	1	723
-	+	1	723
-	+	1	385
-	+	3	394
-
-> ~/i3/public/app/PlaylistWindow.js
-	"	1	0
-
-> ~/i3/PlaylistAdapter.js
-	"	57	0
-
-> /etc/shadow
-	"	41	0
-	.	65	0
-	+	65	0
-
-> /etc/init.d/parpudar
-	"	186	12
-
-> /home/parpudar/public_html/parpudar/app.js
-	"	816	6
-
-> /home/cenk/gitrepos/cenk/hebele
-	"	1	0
-
-> /home/cenk/logs/cenk.im.access.log
-	"	795	0
-
-> /home/cenk/cenkim/public_html/index.html
-	"	1	0
-
-> /home/cenk/cenkmobi/public_html/index.html
-	"	1	0
-
-> /etc/nginx/sites-enabled/bvnet.net
-	"	4	0
-	^	69	38
-	.	72	20
-	+	69	38
-	+	72	20
-
-> /etc/nginx/sites-enabled/default
-	"	46	4
-
-> /etc/passwd
-	"	28	1
-
-> /etc/postfix/main.cf
-	"	1	0
-
-> /etc/group
-	"	48	0
-	^	39	0
-	.	84	16
+	"	3	0
+	^	1	14
+	.	3	0
 	+	1	13
-	+	84	16
-
-> /etc/dovecot/dovecot.conf
-	"	23	39
-
-> ~/.ssh/known_hosts
-	"	19	0
-	.	19	0
-	+	5	0
-	+	19	0
-
-> /mnt/binlin
-	"	1	0
-
-> /etc/init.d/DbSecuritySpt
-	"	1	0
-
-> /var/log/rkhunter.log
-	"	1787	0
-
-> /usr/sbin/adduser
-	"	1063	0
-
-> /mnt/conf.n
-	"	1	0
-
-> /mnt/cmd.n
-	"	1	0
-
-> /etc/rc.local
-	"	1	0
-	^	13	1
-	.	13	0
-	+	13	101
-	+	14	0
-	+	13	0
-
-> /etc/openvpn/server.conf
-	"	43	0
-
-> /etc/openvpn/easy-rsa/2.0/keys/bvw2bvnet.ovpn
-	"	81	0
-	.	77	0
-	+	80	6
-	+	13	4
-	+	34	5
-	+	36	5
-	+	59	4
-	+	36	2
-	+	59	7
-	+	61	5
-	+	77	4
-	+	78	0
-	+	33	25
-	+	34	0
-	+	37	27
-	+	58	25
-	+	59	0
-	+	62	31
-	+	76	29
-	+	77	0
-
-> /etc/squid/squid.conf
-	"	1132	0
-	.	1132	0
-	+	439	0
-	+	437	0
-	+	436	0
-	+	435	0
-	+	434	0
-	+	433	0
-	+	439	0
-	+	433	0
-	+	441	20
-	+	440	14
-	+	1130	12
-	+	1132	0
-	+	1131	12
-	+	1132	0
-
-> /etc/squid.conf
-	"	1	0
-
-> /etc/ssh/sshd_config
-	"	16	32
-	^	16	33
-	.	16	32
-	+	16	32
-
-> /etc/iptables/rules
-	"	1	11
-
-> /projects/ii/tools/build
-	"	78	2
-
-> ~/NERD_tree_1
-	"	1	0
-	.	1	0
-	+	1	0
-	+	1	0
-
-> ~/NERD_tree_2
-	"	1	0
-	.	1	0
-	+	1	0
-	+	1	0
-
-> ~/jamp/webix/package.json
-	"	8	13
-	.	8	13
-	+	8	13
-
-> ~/jamp/test/jam/webix/package.json
-	"	1	0
-
-> ~/jamp/webix/codebase/package.json
-	"	4	25
-	^	4	26
-	.	4	25
-	+	1	1
-	+	2	22
-	+	9	0
-	+	2	0
-	+	7	6
 	+	3	0
-	+	9	0
-	+	7	0
-	+	3	18
-	+	2	15
-	+	4	25
 
-> ~/jamp/webix/codebase/webix_debug.js
-	"	1	0
+> ~/i3stream/data.json
+	"	52	0
+	^	52	1
+	.	9	71
+	+	6	16
+	+	7	20
+	+	9	72
+	+	51	0
+	+	51	0
+	+	15	0
+	+	27	0
+	+	38	4
+	+	5	23
+	+	17	23
+	+	16	12
+	+	28	12
+	+	38	5
+	+	39	0
+	+	40	12
+	+	29	23
+	+	31	20
+	+	30	18
+	+	42	18
+	+	41	23
+	+	43	20
+	+	45	71
+	+	33	71
+	+	21	71
+	+	18	18
+	+	6	18
+	+	9	71
+
+> /etc/network/interfaces
+	"	13	31
+	^	13	32
+	.	13	31
+	+	13	31
