@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if [[ $EUID != 0 ]]; then
+  echo "Usage: sudo mount-cifs";
+  exit 1;
+fi
+
+read -e -p "Mount Point: " mp;
+read -p "UNC Path: //" unc;
+read -p "Username: " username;
+read -s -p "Password: " password;
+
+mkdir -p $mp;
+mount -t cifs //$unc $mp -o username=$username,password=$password,iocharset=utf8,file_mode=0777,dir_mode=0777,soft,user,noperm
+echo "";
