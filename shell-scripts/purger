@@ -1,0 +1,19 @@
+#!/bin/bash
+
+DIR="/data"
+MIN_FREESPACE=$(( 10 * 1024 ))  # in Megabytes
+
+#=============================================================================================
+
+find $DIR -type f -name "*.mp4" -printf "%f\n" | cut -c 5- | sort | while read FILE; do
+  let "FREESPACE = $(df -k $DIR | tail -1 | awk '{print $4}') / 1024"
+  if [ $FREESPACE -lt $MIN_FREESPACE ]
+    exit 0
+  then
+    MORE=$(($MIN_FREESPACE - $FREESPACE))
+    deleted=$(find $DIR -type f -name *$FILE -exec mv '{}' /bak/ \; -exec echo '{}' \;)
+    echo "$MORE more MBs to be deleted"
+    printf "Some files have been deleted:\n$deleted\n=====\n"
+  fi
+done
+

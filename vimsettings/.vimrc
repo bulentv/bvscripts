@@ -179,7 +179,7 @@ catch
 endtry
 
 set ffs=unix,dos,mac "Default file types
-set nu
+set nonu
 autocmd BufWinLeave *.* mkview!
 autocmd BufWinEnter *.* silent loadview
 set sessionoptions=blank,buffers,curdir,folds,help,options,tabpages,winsize
