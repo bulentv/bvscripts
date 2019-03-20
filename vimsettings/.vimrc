@@ -746,6 +746,8 @@ endfunction
 function! TabLine()
   let s = ''
   for i in range(tabpagenr('$'))
+    let s .= '%#TabNum#'
+    let s .= i + 1
     if i + 1 == tabpagenr()
       let s .= '%#TabLineSel#'
     else
