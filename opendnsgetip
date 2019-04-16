@@ -1,0 +1,20 @@
+#!/bin/bash
+
+HOST=$1
+
+#########
+
+DIG=`which dig`
+GREP=`which grep`
+AWK=`which awk`
+XARGS=`which xargs`
+ECHO=`which echo`
+
+if [ ! -f ${DIG} ]; then
+  APT=`which apt`
+  $APT update
+  $APT install -y dnsutils
+fi
+
+ip=$($DIG @208.67.222.222 -p 5353 ${HOST} | $GREP ${HOST} | $AWK 'NF{print $NF}' | $XARGS $ECHO | $AWK '{print $3}') 
+echo $ip

@@ -1,0 +1,7 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "javascript.implicitProjectConfig.experimentalDecorators": true,
+    "editor.tabSize": 2,
+    "editor.detectIndentation": true,
+    "editor.smoothScrolling": true
+}
