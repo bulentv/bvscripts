@@ -599,9 +599,9 @@ function! GetTitleForTab(i)
   let bufferNumber = bufferList[windowNumber - 1]
   let bufferName = bufname(bufferNumber)
   let bufferType = getbufvar(bufferNumber, 'buftype')
-  let path = GetFileName(bufferType, bufferName)
-  let dirs = split(path, '/', 1)
-  let fileName = dirs[-1]
+  let tabPath = GetFileName(bufferType, bufferName)
+  let tabDirs = split(tabPath, '/', 1)
+  let fileName = tabDirs[-1]
   let j = 1
 
   while j <= numberOfTabs
@@ -621,7 +621,7 @@ function! GetTitleForTab(i)
 
     if currentFileName == fileName
       if a:i != j
-        let fileName = dirs[-2] . "/" . dirs[-1]
+        let fileName = tabDirs[-2] . "/" . tabDirs[-1]
         break
       endif
     endif
