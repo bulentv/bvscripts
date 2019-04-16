@@ -578,14 +578,65 @@ map <leader>pp :setlocal paste!<cr>
 
 map <leader>bb :cd ..<cr>
 
+function! GetFileName(bufferType, bufferName)
+  let file = a:bufferName
 
+  if a:bufferType == 'nofile'
+    if file =~ '\/.'
+      let file = substitute(file, '.*\/\ze.', '', '')
+    endif
+  else
+    let file = fnamemodify(file, ':p')
+  endif
+
+  return file
+endfunction
+
+function! GetTitleForTab(i)
+  let numberOfTabs = tabpagenr('$')
+  let bufferList = tabpagebuflist(a:i)
+  let windowNumber = tabpagewinnr(a:i)
+  let bufferNumber = bufferList[windowNumber - 1]
+  let bufferName = bufname(bufferNumber)
+  let bufferType = getbufvar(bufferNumber, 'buftype')
+  let path = GetFileName(bufferType, bufferName)
+  let dirs = split(path, '/', 1)
+  let fileName = dirs[-1]
+  let j = 1
+
+  while j <= numberOfTabs
+    let bufferList = tabpagebuflist(j)
+    let windowNumber = tabpagewinnr(j)
+    let bufferNumber = bufferList[windowNumber - 1]
+    let bufferName = bufname(bufferNumber)
+    let bufferType = getbufvar(bufferNumber, 'buftype')
+    let path = GetFileName(bufferType, bufferName)
+
+    if bufferType == 'nofile'
+      continue
+    endif
+
+    let dirs = split(path, '/', 1)
+    let currentFileName = dirs[-1]
+
+    if currentFileName == fileName
+      if a:i != j
+        let fileName = dirs[-2] . "/" . dirs[-1]
+        break
+      endif
+    endif
+
+    let j = j + 1
+  endwhile
+
+  return fileName
+endfunction
 
 " Rename tabs to show tab number.
 " (Based on http://stackoverflow.com/questions/5927952/whats-implementation-of-vims-default-tabline-function)
 if exists("+showtabline")
   function! MyTabLine()
     let s = ''
-    let wn = ''
     let t = tabpagenr()
     let i = 1
     while i <= tabpagenr('$')
@@ -594,7 +645,6 @@ if exists("+showtabline")
       let s .= '%' . i . 'T'
       let s .= (i == t ? '%1*' : '%2*')
       let s .= ' '
-      let wn = tabpagewinnr(i,'$')
 
       let s .= '%#TabNum#'
       let s .= i
@@ -603,12 +653,13 @@ if exists("+showtabline")
       let bufnr = buflist[winnr - 1]
       let file = bufname(bufnr)
       let buftype = getbufvar(bufnr, 'buftype')
+
       if buftype == 'nofile'
         if file =~ '\/.'
           let file = substitute(file, '.*\/\ze.', '', '')
         endif
       else
-        let file = fnamemodify(file, ':p:t')
+        let file = GetTitleForTab(i)
       endif
       if file == ''
         let file = '[No Name]'
@@ -678,85 +729,3 @@ else
 endif
 
 map <leader>m :call MakeSession()<CR>
-
-"function! IndentIgnoringBlanks(child)
-"  let lnum = v:lnum
-"  while v:lnum > 1 && getline(v:lnum-1) == ""
-"    normal k
-"    let v:lnum = v:lnum - 1
-"  endwhile
-"  if a:child == ""
-"    if ! &l:autoindent
-"      return 0
-"    elseif &l:cindent
-"      return cindent(v:lnum)
-"    endif
-"  else
-"    exec "let indent=".a:child
-"    if indent != -1
-"      return indent
-"    endif
-"  endif
-"  if v:lnum == lnum && lnum != 1
-"    return -1
-"  endif
-"  let next = nextnonblank(lnum)
-"  if next == lnum
-"    return -1
-"  endif
-"  if next != 0 && next-lnum <= lnum-v:lnum
-"    return indent(next)
-"  else
-"    return indent(v:lnum-1)
-"  endif
-"endfunction
-"command! -bar IndentIgnoringBlanks
-"            \ if match(&l:indentexpr,'IndentIgnoringBlanks') == -1 |
-"            \   if &l:indentexpr == '' |
-"            \     let b:blanks_indentkeys = &l:indentkeys |
-"            \     if &l:cindent |
-"            \       let &l:indentkeys = &l:cinkeys |
-"            \     else |
-"            \       setlocal indentkeys=!^F,o,O |
-"            \     endif |
-"            \   endif |
-"            \   let b:blanks_indentexpr = &l:indentexpr |
-"            \   let &l:indentexpr = "IndentIgnoringBlanks('".
-"            \   substitute(&l:indentexpr,"'","''","g")."')" |
-"            \ endif
-"command! -bar IndentNormally
-"            \ if exists('b:blanks_indentexpr') |
-"            \   let &l:indentexpr = b:blanks_indentexpr |
-"            \ endif |
-"            \ if exists('b:blanks_indentkeys') |
-"            \   let &l:indentkeys = b:blanks_indentkeys |
-"            \ endif
-"augroup IndentIgnoringBlanks
-"  au!
-"  au FileType * IndentIgnoringBlanks
-"augroup END
-
-function! TabLabel(n)
-  let buflist = tabpagebuflist(a:n)
-  let winnr = tabpagewinnr(a:n)
-  let currentBuffPath = bufname(buflist[winnr - 1])
-  return fnamemodify(currentBuffPath, ":h:t") . "/" . fnamemodify(currentBuffPath, ":t")
-endfunction
-
-function! TabLine()
-  let s = ''
-  for i in range(tabpagenr('$'))
-    let s .= '%#TabNum#'
-    let s .= i + 1
-    if i + 1 == tabpagenr()
-      let s .= '%#TabLineSel#'
-    else
-      let s .= '%#TabLine#'
-    endif
-    let s .= ' %{TabLabel(' . (i + 1) . ')} '
-  endfor
-  let s .= '%#TabLineFill#%T'
-  return s
-endfunction
-
-set tabline=%!TabLine()
