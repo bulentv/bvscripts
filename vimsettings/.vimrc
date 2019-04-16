@@ -174,7 +174,7 @@ endif
 
 set encoding=utf8
 try
-    lang en_US
+  lang en_US
 catch
 endtry
 
@@ -195,9 +195,9 @@ set noswapfile
 
 "Persistent undo
 try
-      set undodir=~/.vim_runtime/undodir
+  set undodir=~/.vim_runtime/undodir
 
-    set undofile
+  set undofile
 catch
 endtry
 
@@ -233,29 +233,29 @@ map <leader>g :vimgrep // **/*.<left><left><left><left><left><left><left>
 
 
 function! CmdLine(str)
-    exe "menu Foo.Bar :" . a:str
-    emenu Foo.Bar
-    unmenu Foo
+  exe "menu Foo.Bar :" . a:str
+  emenu Foo.Bar
+  unmenu Foo
 endfunction
 
 " From an idea by Michael Naumann
 function! VisualSearch(direction) range
-    let l:saved_reg = @"
-    execute "normal! vgvy"
+  let l:saved_reg = @"
+  execute "normal! vgvy"
 
-    let l:pattern = escape(@", '\\/.*$^~[]')
-    let l:pattern = substitute(l:pattern, "\n$", "", "")
+  let l:pattern = escape(@", '\\/.*$^~[]')
+  let l:pattern = substitute(l:pattern, "\n$", "", "")
 
-    if a:direction == 'b'
-        execute "normal ?" . l:pattern . "^M"
-    elseif a:direction == 'gv'
-        call CmdLine("vimgrep " . '/'. l:pattern . '/' . ' **/*.')
-    elseif a:direction == 'f'
-        execute "normal /" . l:pattern . "^M"
-    endif
+  if a:direction == 'b'
+    execute "normal ?" . l:pattern . "^M"
+  elseif a:direction == 'gv'
+    call CmdLine("vimgrep " . '/'. l:pattern . '/' . ' **/*.')
+  elseif a:direction == 'f'
+    execute "normal /" . l:pattern . "^M"
+  endif
 
-    let @/ = l:pattern
-    let @" = l:saved_reg
+  let @/ = l:pattern
+  let @" = l:saved_reg
 endfunction
 
 
@@ -296,7 +296,7 @@ func! DeleteTillSlash()
   let g:cmd = getcmdline()
   let g:cmd_edited = substitute(g:cmd, "\\(.*\[/\]\\).*", "\\1", "")
   if g:cmd == g:cmd_edited
-      let g:cmd_edited = substitute(g:cmd, "\\(.*\[/\]\\).*/", "\\1", "")
+    let g:cmd_edited = substitute(g:cmd, "\\(.*\[/\]\\).*/", "\\1", "")
   endif
   return g:cmd_edited
 endfunc
@@ -341,22 +341,22 @@ map <leader>cd :cd %:p:h<cr>
 
 command! Bclose call <SID>BufcloseCloseIt()
 function! <SID>BufcloseCloseIt()
-   let l:currentBufNum = bufnr("%")
-   let l:alternateBufNum = bufnr("#")
+  let l:currentBufNum = bufnr("%")
+  let l:alternateBufNum = bufnr("#")
 
-   if buflisted(l:alternateBufNum)
-     buffer #
-   else
-     bnext
-   endif
+  if buflisted(l:alternateBufNum)
+    buffer #
+  else
+    bnext
+  endif
 
-   if bufnr("%") == l:currentBufNum
-     new
-   endif
+  if bufnr("%") == l:currentBufNum
+    new
+  endif
 
-   if buflisted(l:currentBufNum)
-     execute("bdelete! ".l:currentBufNum)
-   endif
+  if buflisted(l:currentBufNum)
+    execute("bdelete! ".l:currentBufNum)
+  endif
 endfunction
 
 " Specify the behavior when switching between buffers 
@@ -378,16 +378,16 @@ set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{CurDir()}%h\ \ \ Line:\ 
 
 
 function! CurDir()
-    let curdir = substitute(getcwd(), '/Users/amir/', "~/", "g")
-    return curdir
+  let curdir = substitute(getcwd(), '/Users/amir/', "~/", "g")
+  return curdir
 endfunction
 
 function! HasPaste()
-    if &paste
-        return 'PASTE MODE  '
-    else
-        return ''
-    endif
+  if &paste
+    return 'PASTE MODE  '
+  else
+    return ''
+  endif
 endfunction
 
 
@@ -529,14 +529,14 @@ au FileType javascript inoremap <buffer> $r return
 au FileType javascript inoremap <buffer> $f //--- PH ----------------------------------------------<esc>FP2xi
 
 function! JavaScriptFold()
-    setl foldmethod=syntax
-    setl foldlevelstart=1
-    syn region foldBraces start=/{/ end=/}/ transparent fold keepend extend
+  setl foldmethod=syntax
+  setl foldlevelstart=1
+  syn region foldBraces start=/{/ end=/}/ transparent fold keepend extend
 
-    function! FoldText()
+  function! FoldText()
     return substitute(getline(v:foldstart), '{.*', '{...}', '')
-    endfunction
-    setl foldtext=FoldText()
+  endfunction
+  setl foldtext=FoldText()
 endfunction
 
 
@@ -578,52 +578,103 @@ map <leader>pp :setlocal paste!<cr>
 
 map <leader>bb :cd ..<cr>
 
+function! GetFileName(bufferType, bufferName)
+  let file = a:bufferName
 
+  if a:bufferType == 'nofile'
+    if file =~ '\/.'
+      let file = substitute(file, '.*\/\ze.', '', '')
+    endif
+  else
+    let file = fnamemodify(file, ':p')
+  endif
+
+  return file
+endfunction
+
+function! GetTitleForTab(i)
+  let numberOfTabs = tabpagenr('$')
+  let bufferList = tabpagebuflist(a:i)
+  let windowNumber = tabpagewinnr(a:i)
+  let bufferNumber = bufferList[windowNumber - 1]
+  let bufferName = bufname(bufferNumber)
+  let bufferType = getbufvar(bufferNumber, 'buftype')
+  let path = GetFileName(bufferType, bufferName)
+  let dirs = split(path, '/', 1)
+  let fileName = dirs[-1]
+  let j = 1
+
+  while j <= numberOfTabs
+    let bufferList = tabpagebuflist(j)
+    let windowNumber = tabpagewinnr(j)
+    let bufferNumber = bufferList[windowNumber - 1]
+    let bufferName = bufname(bufferNumber)
+    let bufferType = getbufvar(bufferNumber, 'buftype')
+    let path = GetFileName(bufferType, bufferName)
+
+    if bufferType == 'nofile'
+      continue
+    endif
+
+    let dirs = split(path, '/', 1)
+    let currentFileName = dirs[-1]
+
+    if currentFileName == fileName
+      if a:i != j
+        let fileName = dirs[-2] . "/" . dirs[-1]
+        break
+      endif
+    endif
+
+    let j = j + 1
+  endwhile
+
+  return fileName
+endfunction
 
 " Rename tabs to show tab number.
 " (Based on http://stackoverflow.com/questions/5927952/whats-implementation-of-vims-default-tabline-function)
 if exists("+showtabline")
-    function! MyTabLine()
-        let s = ''
-        let wn = ''
-        let t = tabpagenr()
-        let i = 1
-        while i <= tabpagenr('$')
-            let buflist = tabpagebuflist(i)
-            let winnr = tabpagewinnr(i)
-            let s .= '%' . i . 'T'
-            let s .= (i == t ? '%1*' : '%2*')
-            let s .= ' '
-            let wn = tabpagewinnr(i,'$')
+  function! MyTabLine()
+    let s = ''
+    let t = tabpagenr()
+    let i = 1
+    while i <= tabpagenr('$')
+      let buflist = tabpagebuflist(i)
+      let winnr = tabpagewinnr(i)
+      let s .= '%' . i . 'T'
+      let s .= (i == t ? '%1*' : '%2*')
+      let s .= ' '
 
-            let s .= '%#TabNum#'
-            let s .= i
-            " let s .= '%*'
-            let s .= (i == t ? '%#TabLineSel#' : '%#TabLine#')
-            let bufnr = buflist[winnr - 1]
-            let file = bufname(bufnr)
-            let buftype = getbufvar(bufnr, 'buftype')
-            if buftype == 'nofile'
-                if file =~ '\/.'
-                    let file = substitute(file, '.*\/\ze.', '', '')
-                endif
-            else
-                let file = fnamemodify(file, ':p:t')
-            endif
-            if file == ''
-                let file = '[No Name]'
-            endif
-            let s .= ' ' . file . ' '
-            let i = i + 1
-        endwhile
-        let s .= '%T%#TabLineFill#%='
-        let s .= (tabpagenr('$') > 1 ? '%999XX' : 'X')
-        return s
-    endfunction
-    set stal=2
-    set tabline=%!MyTabLine()
-    set showtabline=1
-    highlight link TabNum Special
+      let s .= '%#TabNum#'
+      let s .= i
+      " let s .= '%*'
+      let s .= (i == t ? '%#TabLineSel#' : '%#TabLine#')
+      let bufnr = buflist[winnr - 1]
+      let file = bufname(bufnr)
+      let buftype = getbufvar(bufnr, 'buftype')
+
+      if buftype == 'nofile'
+        if file =~ '\/.'
+          let file = substitute(file, '.*\/\ze.', '', '')
+        endif
+      else
+        let file = GetTitleForTab(i)
+      endif
+      if file == ''
+        let file = '[No Name]'
+      endif
+      let s .= ' ' . file . ' '
+      let i = i + 1
+    endwhile
+    let s .= '%T%#TabLineFill#%='
+    let s .= (tabpagenr('$') > 1 ? '%999XX' : 'X')
+    return s
+  endfunction
+  set stal=2
+  set tabline=%!MyTabLine()
+  set showtabline=1
+  highlight link TabNum Special
 endif
 
 set pastetoggle=<F2>
@@ -678,85 +729,3 @@ else
 endif
 
 map <leader>m :call MakeSession()<CR>
-
-"function! IndentIgnoringBlanks(child)
-"  let lnum = v:lnum
-"  while v:lnum > 1 && getline(v:lnum-1) == ""
-"    normal k
-"    let v:lnum = v:lnum - 1
-"  endwhile
-"  if a:child == ""
-"    if ! &l:autoindent
-"      return 0
-"    elseif &l:cindent
-"      return cindent(v:lnum)
-"    endif
-"  else
-"    exec "let indent=".a:child
-"    if indent != -1
-"      return indent
-"    endif
-"  endif
-"  if v:lnum == lnum && lnum != 1
-"    return -1
-"  endif
-"  let next = nextnonblank(lnum)
-"  if next == lnum
-"    return -1
-"  endif
-"  if next != 0 && next-lnum <= lnum-v:lnum
-"    return indent(next)
-"  else
-"    return indent(v:lnum-1)
-"  endif
-"endfunction
-"command! -bar IndentIgnoringBlanks
-"            \ if match(&l:indentexpr,'IndentIgnoringBlanks') == -1 |
-"            \   if &l:indentexpr == '' |
-"            \     let b:blanks_indentkeys = &l:indentkeys |
-"            \     if &l:cindent |
-"            \       let &l:indentkeys = &l:cinkeys |
-"            \     else |
-"            \       setlocal indentkeys=!^F,o,O |
-"            \     endif |
-"            \   endif |
-"            \   let b:blanks_indentexpr = &l:indentexpr |
-"            \   let &l:indentexpr = "IndentIgnoringBlanks('".
-"            \   substitute(&l:indentexpr,"'","''","g")."')" |
-"            \ endif
-"command! -bar IndentNormally
-"            \ if exists('b:blanks_indentexpr') |
-"            \   let &l:indentexpr = b:blanks_indentexpr |
-"            \ endif |
-"            \ if exists('b:blanks_indentkeys') |
-"            \   let &l:indentkeys = b:blanks_indentkeys |
-"            \ endif
-"augroup IndentIgnoringBlanks
-"  au!
-"  au FileType * IndentIgnoringBlanks
-"augroup END
-
-function! TabLabel(n)
-  let buflist = tabpagebuflist(a:n)
-  let winnr = tabpagewinnr(a:n)
-  let currentBuffPath = bufname(buflist[winnr - 1])
-  return fnamemodify(currentBuffPath, ":h:t") . "/" . fnamemodify(currentBuffPath, ":t")
-endfunction
-
-function! TabLine()
-  let s = ''
-  for i in range(tabpagenr('$'))
-    let s .= '%#TabNum#'
-    let s .= i + 1
-    if i + 1 == tabpagenr()
-      let s .= '%#TabLineSel#'
-    else
-      let s .= '%#TabLine#'
-    endif
-    let s .= ' %{TabLabel(' . (i + 1) . ')} '
-  endfor
-  let s .= '%#TabLineFill#%T'
-  return s
-endfunction
-
-set tabline=%!TabLine()
